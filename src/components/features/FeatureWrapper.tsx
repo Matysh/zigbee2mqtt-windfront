@@ -28,7 +28,7 @@ export default function FeatureWrapper({
     endpointSpecific,
     parentFeatures,
 }: PropsWithChildren<FeatureWrapperProps>) {
-    const { t } = useTranslation(["zigbee", "deviceFeatureNames", "deviceFeatureDescriptions"]);
+    const { t } = useTranslation(["zigbee", "deviceFeatureLabels", "deviceFeatureNames", "deviceFeatureDescriptions"]);
     // @ts-expect-error `undefined` is fine
     const unit = feature.unit as string | undefined;
     const [fi, fiClassName] = getFeatureIcon(feature.name, deviceValue, unit);

@@ -164,7 +164,194 @@
         "On/off state of the switch": "Состояние реле: включено или выключено.",
         "Set inching off or inching on mode.": "Определяет, будет ли импульсный режим включать или выключать устройство.",
         "State actions will also be published as 'action' when true (default false).": "Если включено, изменения состояния также публикуются в поле action. По умолчанию отключено.",
-        "Triggered action (e.g. a button click)": "Выполненное действие, например нажатие кнопки."
+        "Triggered action (e.g. a button click)": "Выполненное действие, например нажатие кнопки.",
+        "\"linkage_alarm\" is triggered": "Сработала связанная тревога linkage_alarm.",
+        "(telemetry) Device uptime, in seconds": "Телеметрия: время работы устройства в секундах.",
+        "(telemetry) Number of resets": "Телеметрия: количество перезапусков.",
+        "(telemetry) Total clicks count of button 1": "Телеметрия: общее количество нажатий кнопки 1.",
+        "(telemetry) Total clicks count of button 2": "Телеметрия: общее количество нажатий кнопки 2.",
+        "(telemetry) Total clicks count of button 3": "Телеметрия: общее количество нажатий кнопки 3.",
+        "(telemetry) Total toggle count of relay 1": "Телеметрия: общее количество переключений реле 1.",
+        "(telemetry) Total toggle count of relay 2": "Телеметрия: общее количество переключений реле 2.",
+        "Allow detection of double clicks, may introduce delay in reaction when enabled": "Разрешает распознавание двойных нажатий. При включении реакция на одиночное нажатие может происходить с задержкой.",
+        "Anti interference function": "Функция защиты от помех.",
+        "Away preset temperature": "Заданная температура для режима отсутствия.",
+        "Battery percentage": "Уровень заряда батареи в процентах.",
+        "Brightness acquisition interval (refresh and update only while active)": "Интервал измерения освещённости; чтение и изменение доступны только при активном устройстве.",
+        "Brightness of LED in OFF state": "Яркость LED-индикатора при выключенном реле.",
+        "Brightness of LED in ON state": "Яркость LED-индикатора при включённом реле.",
+        "Brightness of this light": "Яркость этого источника света.",
+        "Buzzer alarmed (manually)": "Зуммер включён вручную.",
+        "Buzzer muted (manually)": "Зуммер отключён вручную.",
+        "Calibrates the current value (percentual offset), takes into effect on next report of device.": "Калибрует значение тока с помощью относительной поправки. Изменение применяется при следующем отчёте устройства.",
+        "Calibrates the device_temperature value (absolute offset), takes into effect on next report of device.": "Калибрует температуру устройства с помощью абсолютной поправки. Изменение применяется при следующем отчёте устройства.",
+        "Calibrates the humidity value (absolute offset), takes into effect on next report of device.": "Калибрует влажность с помощью абсолютной поправки. Изменение применяется при следующем отчёте устройства.",
+        "Calibrates the illuminance value (percentual offset), takes into effect on next report of device.": "Калибрует освещённость с помощью относительной поправки. Изменение применяется при следующем отчёте устройства.",
+        "Calibrates the power value (percentual offset), takes into effect on next report of device.": "Калибрует мощность с помощью относительной поправки. Изменение применяется при следующем отчёте устройства.",
+        "Calibrates the pressure value (absolute offset), takes into effect on next report of device.": "Калибрует давление с помощью абсолютной поправки. Изменение применяется при следующем отчёте устройства.",
+        "Calibrates the temperature value (absolute offset), takes into effect on next report of device.": "Калибрует температуру с помощью абсолютной поправки. Изменение применяется при следующем отчёте устройства.",
+        "Calibrates the valve": "Калибрует клапан.",
+        "Calibrates the voltage value (percentual offset), takes into effect on next report of device.": "Калибрует напряжение с помощью относительной поправки. Изменение применяется при следующем отчёте устройства.",
+        "Choose whether the thermostat uses its internal sensor or data provided via 'External Sensor Temperature'": "Выберите, будет ли термостат использовать встроенный датчик или значение «Внешняя температура».",
+        "Clear all weekly schedule inputs and upload an empty schedule to the thermostat": "Очищает все поля недельного расписания и загружает пустое расписание в термостат.",
+        "Color of this light in the CIE 1931 color space (x/y)": "Цвет источника света в цветовом пространстве CIE 1931 (x/y).",
+        "Color temperature of this light": "Цветовая температура источника света.",
+        "Comfort temperature": "Температура для комфортного режима.",
+        "Condition of automatic recovery after emergency shutoff": "Условие автоматического восстановления после аварийного отключения.",
+        "Controls state after power outage: false = on, true = restore previous state": "Определяет состояние после отключения питания: false — включить, true — восстановить предыдущее состояние.",
+        "Controls the motor speed": "Управляет скоростью двигателя.",
+        "Controls the temperature unit of the thermostat (default celsius).": "Выбирает единицу температуры термостата; по умолчанию — градусы Цельсия.",
+        "Controls the transition time (in seconds) of on/off, brightness, color temperature (if applicable) and color (if applicable) changes. Defaults to `0` (no transition).": "Задаёт в секундах время плавного изменения включения, яркости, цветовой температуры и цвета. Значение по умолчанию — 0, без плавного перехода.",
+        "Current state of the custom OTA transfer used to upload the weekly schedule to the thermostat.": "Текущее состояние служебной OTA-передачи, используемой для загрузки недельного расписания в термостат.",
+        "Current temperature measured by the internal or external sensor": "Текущая температура, измеренная внутренним или внешним датчиком.",
+        "Current temperature measured on the device": "Текущая температура, измеренная устройством.",
+        "Current temperature used by the thermostat": "Текущая температура, которую использует термостат.",
+        "Decoupled mode": "Режим, в котором кнопка не управляет реле напрямую.",
+        "Decoupled mode for button": "Режим отвязки кнопки от реле.",
+        "Detection distance": "Дальность обнаружения присутствия.",
+        "Determines if temperature control abnormalities should be detected": "Определяет, нужно ли обнаруживать неисправности регулирования температуры.",
+        "Device valve is open or closed (heating or not)": "Показывает, открыт ли клапан устройства и выполняется ли нагрев.",
+        "Dimmer button mode": "Режим кнопки диммера.",
+        "Do not publish set cover target position as a normal 'position' value (default false).": "Не публиковать заданное целевое положение шторы как обычное значение position; по умолчанию отключено.",
+        "Duration in minutes for the current manual override. 0 means until next schedule event, 65535 means indefinitely.": "Длительность ручного переопределения в минутах. 0 — до следующего события расписания, 65535 — бессрочно.",
+        "Eco temperature": "Температура для экономичного режима.",
+        "Enable child lock to prevent manual button operation": "Включает блокировку от детей, запрещающую ручное управление кнопками.",
+        "Enable or disable open window detection. When enabled, the window_open is set to true if an open window is detected": "Включает или отключает обнаружение открытого окна. При обнаружении открытого окна параметр window_open принимает значение true.",
+        "Enable or disable reporting of abnormal temperature control status. When enabled, the valve alarm is set to true if an abnormality is detected": "Включает или отключает сообщения о неисправности регулирования температуры. При обнаружении неисправности параметр valve_alarm принимает значение true.",
+        "Enable/disable away mode": "Включает или отключает режим отсутствия.",
+        "Enables/disables bi-weekly anti-scaling feature": "Включает или отключает автоматическое открытие клапана раз в две недели для защиты от закисания.",
+        "Enables/disables physical input on the device": "Включает или отключает физический вход устройства.",
+        "Enables/disables window detection on the device": "Включает или отключает обнаружение открытого окна.",
+        "Expose the raw illuminance value.": "Показывает необработанное значение освещённости.",
+        "Flip the display orientation": "Переворачивает ориентацию дисплея.",
+        "Holiday temperature": "Температура для режима отпуска.",
+        "Home preset temperature": "Заданная температура для режима «Дома».",
+        "Hue of LED in OFF state": "Оттенок LED-индикатора при выключенном реле.",
+        "Hue of LED in ON state": "Оттенок LED-индикатора при включённом реле.",
+        "If NTC is damaged, \"Er\" will be on the TRV display.": "Если датчик NTC повреждён, на дисплее термоголовки отображается «Er».",
+        "If the heat sink is not fully opened within two weeks or is not used for a long time, the valve will be blocked due to silting up and the heat sink will not be able to be used. To ensure normal use of the heat sink, the controller will automatically open the valve fully every two weeks. It will run for 30 seconds per time with the screen displaying \"Ad\", then return to its normal working state again.": "Если клапан долго не открывать полностью, он может закиснуть. Для профилактики контроллер раз в две недели полностью открывает клапан на 30 секунд; на дисплее отображается «Ad», после чего устройство возвращается к обычной работе.",
+        "Indicates how many times the sensor was triggered (since last scheduled report)": "Количество срабатываний датчика с момента последнего планового отчёта.",
+        "Indicates if the battery of this device is almost empty": "Показывает, что батарея устройства почти разряжена.",
+        "Indicates if the contact is closed (= true) or open (= false)": "Показывает состояние контакта: true — закрыт, false — открыт.",
+        "Indicates if the device is in setup mode (E11)": "Показывает, находится ли устройство в режиме настройки E11.",
+        "Indicates if this valve is calibrated, use the calibrate option to calibrate": "Показывает, откалиброван ли клапан. Для калибровки используйте параметр «Калибровка».",
+        "Indicates if window is open": "Показывает, открыто ли окно.",
+        "Indicates whether open window detection has reported an open window": "Показывает, обнаружила ли функция контроля открытое окно.",
+        "Indicates whether temperature control abnormal notification has reported an active alert": "Показывает, активно ли оповещение о неисправности регулирования температуры.",
+        "Indicates whether the battery of the device is almost empty": "Показывает, что батарея устройства почти разряжена.",
+        "Indicates whether the device detected a water leak": "Показывает, обнаружена ли протечка воды.",
+        "Indicates whether the device detected occupancy": "Показывает, обнаружено ли движение.",
+        "Indicates whether the device detected presence": "Показывает, обнаружено ли присутствие.",
+        "Indicates whether the device detected smoke": "Показывает, обнаружен ли дым.",
+        "Indicates whether the device is opened or closed": "Показывает, открыто или закрыто устройство.",
+        "Indicates whether the device is tampered": "Показывает, обнаружено ли вмешательство в устройство.",
+        "Initiate device identification": "Запускает идентификацию устройства.",
+        "Initiate device identification. This device is asleep by default.You may need to wake it up first before sending the identify command.": "Запускает идентификацию устройства. Обычно устройство спит, поэтому перед отправкой команды его может потребоваться разбудить.",
+        "Input for remote temperature sensor (when sensor is set to external)": "Значение внешнего датчика температуры; используется, когда выбран внешний источник.",
+        "Instantaneous measured electrical current": "Мгновенное измеренное значение электрического тока.",
+        "Instantaneous measured power": "Мгновенная измеренная мощность.",
+        "Inverts the reported cover position and the state derived from it, false: open=100,close=0, true: open=0,close=100 (default false).": "Инвертирует положение шторы и вычисленное из него состояние: false — открыто=100, закрыто=0; true — открыто=0, закрыто=100. По умолчанию отключено.",
+        "Is LED indicator enabled in OFF state": "Включён ли LED-индикатор при выключенном реле.",
+        "Is LED indicator enabled in ON state": "Включён ли LED-индикатор при включённом реле.",
+        "LED indicator mode": "Режим работы LED-индикатора.",
+        "Led indicator": "Настройка LED-индикатора.",
+        "Link quality (signal strength)": "Качество связи, то есть уровень сигнала.",
+        "Lock or unlock the physical controls on the device": "Блокирует или разблокирует физические элементы управления устройства.",
+        "Lower voltage threshold (use with caution)": "Нижний порог напряжения. Изменяйте с осторожностью.",
+        "Manual external temperature forwarded to the W600 when temperature source is external": "Внешняя температура, передаваемая термостату W600 при выборе внешнего источника.",
+        "Measured electrical potential value": "Измеренное значение электрического напряжения.",
+        "Measured illuminance": "Измеренная освещённость.",
+        "Measured illuminance. 0 = too low to be measured": "Измеренная освещённость. 0 означает, что уровень слишком низок для измерения.",
+        "Measured relative humidity": "Измеренная относительная влажность.",
+        "Measured temperature value": "Измеренное значение температуры.",
+        "Minimum temperature limit for frost protection. Turns the thermostat on regardless of setpoint if the temperature drops below this.": "Минимальная температура защиты от замерзания. Если температура опускается ниже неё, термостат включает нагрев независимо от заданной температуры.",
+        "Mode of this device": "Режим работы устройства.",
+        "Mode of this device (similar to system_mode)": "Режим работы устройства, аналогичный system_mode.",
+        "Motion detection sensitivity": "Чувствительность обнаружения движения.",
+        "Notifies of a temperature control abnormality if valve detection is enabled (e.g., thermostat not installed correctly, valve failure or incorrect calibration, incorrect link to external temperature sensor)": "Сообщает о неисправности регулирования температуры, если включён контроль клапана: например, при неправильной установке термостата, неисправности или неверной калибровке клапана либо ошибочной привязке внешнего датчика.",
+        "Number of digits after decimal point for current, takes into effect on next report of device. This option can only decrease the precision, not increase it.": "Количество знаков после запятой для тока. Изменение применяется при следующем отчёте устройства и может только уменьшить точность.",
+        "Number of digits after decimal point for humidity, takes into effect on next report of device. This option can only decrease the precision, not increase it.": "Количество знаков после запятой для влажности. Изменение применяется при следующем отчёте устройства и может только уменьшить точность.",
+        "Number of digits after decimal point for power, takes into effect on next report of device. This option can only decrease the precision, not increase it.": "Количество знаков после запятой для мощности. Изменение применяется при следующем отчёте устройства и может только уменьшить точность.",
+        "Number of digits after decimal point for pressure, takes into effect on next report of device. This option can only decrease the precision, not increase it.": "Количество знаков после запятой для давления. Изменение применяется при следующем отчёте устройства и может только уменьшить точность.",
+        "Number of digits after decimal point for temperature, takes into effect on next report of device. This option can only decrease the precision, not increase it.": "Количество знаков после запятой для температуры. Изменение применяется при следующем отчёте устройства и может только уменьшить точность.",
+        "Number of digits after decimal point for voltage, takes into effect on next report of device. This option can only decrease the precision, not increase it.": "Количество знаков после запятой для напряжения. Изменение применяется при следующем отчёте устройства и может только уменьшить точность.",
+        "Number of power outages": "Количество отключений питания.",
+        "Number of power outages (since last pairing)": "Количество отключений питания с момента последнего сопряжения.",
+        "Offset to add/subtract to the local temperature": "Поправка, прибавляемая к текущей температуре или вычитаемая из неё.",
+        "On/off state of this light": "Состояние источника света: включён или выключен.",
+        "Overcurrent alarm is triggered": "Сработала защита от превышения тока.",
+        "Overheat alarm is triggered": "Сработала защита от перегрева.",
+        "Overtemperature threshold (use with caution)": "Порог перегрева. Изменяйте с осторожностью.",
+        "Overvoltage alarm is triggered": "Сработала защита от перенапряжения.",
+        "PIR keep time in seconds (refresh and update only while active)": "Время удержания состояния PIR-датчика в секундах; чтение и изменение доступны только при активном устройстве.",
+        "PIR sensor sensitivity (refresh and update only while active)": "Чувствительность PIR-датчика; чтение и изменение доступны только при активном устройстве.",
+        "Position of the valve, 100% is fully open": "Положение клапана: 100% означает полностью открытый клапан.",
+        "Position of this cover": "Положение этой шторы.",
+        "Power on behavior state": "Поведение устройства после включения питания.",
+        "Power supply type": "Тип источника питания.",
+        "Presence keep time": "Время удержания состояния присутствия.",
+        "Remaining battery in %": "Оставшийся заряд батареи в процентах.",
+        "Remaining battery in %, can take up to 24 hours before reported": "Оставшийся заряд батареи в процентах. Первое значение может появиться в течение 24 часов.",
+        "Reply to Tuya-specific time synchronization requests: \"1970\" - Reply with seconds since 1970/01/01 (recommended, should stop the device from asking), \"2000\" - Reply with seconds since 2000/01/01 (use if the weekday is wrong with 1970), \"off\" - Don't reply (use if replying causes too much traffic). Default for this device: \"1970\"": "Ответ на запросы синхронизации времени Tuya: «1970» — секунды с 01.01.1970 (рекомендуется), «2000» — секунды с 01.01.2000 (если с 1970 неверно определяется день недели), «off» — не отвечать. По умолчанию для этого устройства: «1970».",
+        "Reply to Tuya-specific time synchronization requests: \"1970\" - Reply with seconds since 1970/01/01 (recommended, should stop the device from asking), \"2000\" - Reply with seconds since 2000/01/01 (use if the weekday is wrong with 1970), \"off\" - Don't reply (use if replying causes too much traffic). Default for this device: \"off\"": "Ответ на запросы синхронизации времени Tuya: «1970» — секунды с 01.01.1970 (рекомендуется), «2000» — секунды с 01.01.2000 (если с 1970 неверно определяется день недели), «off» — не отвечать. По умолчанию для этого устройства: «off».",
+        "Reported battery voltage in millivolts": "Напряжение батареи в милливольтах.",
+        "Saturation of LED in OFF state": "Насыщенность цвета LED-индикатора при выключенном реле.",
+        "Saturation of LED in ON state": "Насыщенность цвета LED-индикатора при включённом реле.",
+        "Schedule for friday, example: \"HH:MM/C HH:MM/C HH:MM/C HH:MM/C HH:MM/C HH:MM/C\"": "Расписание на пятницу. Формат: «ЧЧ:ММ/Т ЧЧ:ММ/Т ЧЧ:ММ/Т ЧЧ:ММ/Т ЧЧ:ММ/Т ЧЧ:ММ/Т».",
+        "Schedule for monday, example: \"HH:MM/C HH:MM/C HH:MM/C HH:MM/C HH:MM/C HH:MM/C\"": "Расписание на понедельник. Формат: «ЧЧ:ММ/Т ЧЧ:ММ/Т ЧЧ:ММ/Т ЧЧ:ММ/Т ЧЧ:ММ/Т ЧЧ:ММ/Т».",
+        "Schedule for saturday, example: \"HH:MM/C HH:MM/C HH:MM/C HH:MM/C HH:MM/C HH:MM/C\"": "Расписание на субботу. Формат: «ЧЧ:ММ/Т ЧЧ:ММ/Т ЧЧ:ММ/Т ЧЧ:ММ/Т ЧЧ:ММ/Т ЧЧ:ММ/Т».",
+        "Schedule for sunday, example: \"HH:MM/C HH:MM/C HH:MM/C HH:MM/C HH:MM/C HH:MM/C\"": "Расписание на воскресенье. Формат: «ЧЧ:ММ/Т ЧЧ:ММ/Т ЧЧ:ММ/Т ЧЧ:ММ/Т ЧЧ:ММ/Т ЧЧ:ММ/Т».",
+        "Schedule for thursday, example: \"HH:MM/C HH:MM/C HH:MM/C HH:MM/C HH:MM/C HH:MM/C\"": "Расписание на четверг. Формат: «ЧЧ:ММ/Т ЧЧ:ММ/Т ЧЧ:ММ/Т ЧЧ:ММ/Т ЧЧ:ММ/Т ЧЧ:ММ/Т».",
+        "Schedule for tuesday, example: \"HH:MM/C HH:MM/C HH:MM/C HH:MM/C HH:MM/C HH:MM/C\"": "Расписание на вторник. Формат: «ЧЧ:ММ/Т ЧЧ:ММ/Т ЧЧ:ММ/Т ЧЧ:ММ/Т ЧЧ:ММ/Т ЧЧ:ММ/Т».",
+        "Schedule for wednesday, example: \"HH:MM/C HH:MM/C HH:MM/C HH:MM/C HH:MM/C HH:MM/C\"": "Расписание на среду. Формат: «ЧЧ:ММ/Т ЧЧ:ММ/Т ЧЧ:ММ/Т ЧЧ:ММ/Т ЧЧ:ММ/Т ЧЧ:ММ/Т».",
+        "Select temperature sensor to use": "Выберите датчик температуры, который будет использоваться.",
+        "Selected preset scene": "Выбранный предустановленный режим.",
+        "Self-test in progress": "Выполняется самопроверка.",
+        "Sends a message the last time occupancy (occupancy: true) was detected. When setting this for example to [10, 60] a `{\"no_occupancy_since\": 10}` will be sent after 10 seconds and a `{\"no_occupancy_since\": 60}` after 60 seconds.": "Отправляет сообщения о времени с последнего обнаружения движения. Например, при значениях [10, 60] через 10 секунд будет отправлено no_occupancy_since: 10, а через 60 секунд — no_occupancy_since: 60.",
+        "Sets the duration of the identification procedure in seconds (i.e., how long the device would flash).The value ranges from 1 to 30 seconds (default: 3).": "Задаёт длительность идентификации в секундах, то есть время мигания устройства. Диапазон от 1 до 30 секунд, по умолчанию — 3 секунды.",
+        "Sets the duration of the identification procedure in seconds (i.e., how long the device would flash).The value ranges from 1 to 60 seconds (default: 30).": "Задаёт длительность идентификации в секундах, то есть время мигания устройства. Диапазон от 1 до 60 секунд, по умолчанию — 30 секунд.",
+        "Sleep preset temperature": "Заданная температура для режима сна.",
+        "Smart schedule configuration (default: mon,tue,wed,thu,fri|8:00,24.0|18:00,17.0|23:00,22.0|8:00,22.0)": "Настройка умного расписания. По умолчанию: mon,tue,wed,thu,fri|8:00,24.0|18:00,17.0|23:00,22.0|8:00,22.0.",
+        "Specifies the maximum light output of the ballast": "Задаёт максимальный уровень яркости драйвера светильника.",
+        "Specifies the minimum light output of the ballast": "Задаёт минимальный уровень яркости драйвера светильника.",
+        "Staged weekly schedule for this day. Use comma-delimited entries in the format HH:MM/preset, for example '08:00/home, 19:00/vacation'. Editing the text fields does not upload anything until Save schedule is triggered.": "Подготовленное расписание на этот день. Укажите через запятую значения в формате ЧЧ:ММ/режим, например «08:00/home, 19:00/vacation». Изменения не загружаются в термостат, пока не выполнена команда «Сохранить расписание».",
+        "Start valve calibration": "Запускает калибровку клапана.",
+        "Starts the self-test process (checking the indicator light and buzzer work properly)": "Запускает самопроверку индикатора и зуммера.",
+        "Startup: when room temperature decreases by 3°C within 5 minutes, stop heating. Close: when room temperature rises by 3 degrees / 48 minutes later / manual (three ways). After the window opening mode is turned on, one of these three conditions can trigger to exit the window opening mode.": "Срабатывание: если температура в комнате падает на 3°C за 5 минут, нагрев прекращается. Выход из режима: температура повышается на 3°C, проходит 48 минут либо режим отключается вручную.",
+        "Static detection sensitivity": "Чувствительность обнаружения неподвижного присутствия.",
+        "Switch mode (control_relay - the button control the relay, decoupled - button send events when pressed)": "Режим выключателя: control_relay — кнопка управляет реле; decoupled — кнопка не управляет реле и только отправляет события.",
+        "Tamper-proof status": "Состояние защиты от вскрытия.",
+        "Temperature measured by the thermostat's internal sensor": "Температура, измеренная встроенным датчиком термостата.",
+        "Temperature of the device": "Температура устройства.",
+        "Temperature setpoint": "Заданная температура.",
+        "Temporary manual override active": "Показывает, активно ли временное ручное переопределение.",
+        "The buzzer can be muted and alarmed manually. During a smoke alarm, the buzzer can be manually muted for 80 seconds (\"mute\") and unmuted (\"alarm\"). The buzzer cannot be pre-muted, as this function only works during a smoke alarm. During the absence of a smoke alarm, the buzzer can be manually alarmed (\"alarm\") and disalarmed (\"mute\"), but for this \"linkage_alarm\" option must be enabled": "Зуммером можно управлять вручную. Во время тревоги его можно отключить на 80 секунд командой «mute» и снова включить командой «alarm»; заранее отключить звук нельзя. При отсутствии дыма зуммер можно включать и выключать вручную, если включён параметр linkage_alarm.",
+        "The current charging status.": "Текущее состояние зарядки.",
+        "The current running state": "Текущее состояние нагрева.",
+        "The current state of the motor.": "Текущее состояние двигателя.",
+        "The difference required between local temperature and set point to trigger the valve.": "Разница между текущей и заданной температурой, необходимая для срабатывания клапана.",
+        "The measured atmospheric pressure": "Измеренное атмосферное давление.",
+        "Time in seconds after which occupancy is cleared after detecting it (default is \"detection_interval\" + 2 seconds). The value must be equal to or greater than \"detection_interval\", and it can also be a fraction.": "Время в секундах, через которое состояние движения сбрасывается. По умолчанию равно detection_interval + 2 секунды. Значение должно быть не меньше detection_interval и может быть дробным.",
+        "Time interval for detecting actions": "Интервал обнаружения действий.",
+        "Triggers an effect on the light (e.g. make light blink for a few seconds)": "Запускает эффект на светильнике, например мигание в течение нескольких секунд.",
+        "Undervoltage alarm is triggered": "Сработала защита от пониженного напряжения.",
+        "Upload the weekly schedule to the thermostat": "Загружает недельное расписание в термостат.",
+        "Upper current threshold": "Верхний порог тока.",
+        "Upper voltage threshold": "Верхний порог напряжения.",
+        "Vacation preset temperature": "Заданная температура для режима отпуска.",
+        "Value of smoke concentration": "Значение концентрации дыма.",
+        "Value of smoke concentration in dB/m": "Значение концентрации дыма в дБ/м.",
+        "Valve calibration state": "Состояние калибровки клапана.",
+        "Voltage of the battery in millivolts": "Напряжение батареи в милливольтах.",
+        "When enabled colors will be synced, e.g. if the light supports both color x/y and color temperature a conversion from color x/y to color temperature will be done when setting the x/y color (default true).": "Если включено, представления цвета синхронизируются. Например, для лампы с поддержкой x/y и цветовой температуры при задании x/y будет рассчитана соответствующая цветовая температура. По умолчанию включено.",
+        "When enabled, the device will change its state based on your schedule settings": "Если включено, устройство изменяет состояние в соответствии с расписанием.",
+        "When the room temperature is lower than 5 °C, the valve opens; when the temperature rises to 8 °C, the valve closes.": "При температуре ниже 5°C клапан открывается, а при повышении до 8°C закрывается.",
+        "When this option is enabled and a smoke alarm has occurred, then \"linkage_alarm_state\"=true, and when the smoke alarm has ended or the buzzer has been manually muted, then \"linkage_alarm_state\"=false": "Если параметр включён, при обнаружении дыма linkage_alarm_state принимает значение true. После окончания тревоги или ручного отключения зуммера значение становится false.",
+        "When this option is enabled then in the normal monitoring state, the green indicator light flashes every 60 seconds": "Если включено, в обычном режиме зелёный индикатор мигает каждые 60 секунд.",
+        "Whether the curtain direction is inverted": "Инвертировано ли направление движения шторы.",
+        "Whether the motor is moving or not": "Показывает, движется ли двигатель.",
+        "Wind-down preset temperature": "Заданная температура для режима подготовки ко сну.",
+        "Window status CLOSE or OPEN ": "Состояние окна: закрыто или открыто."
     },
     "deviceFeatureNames": {
         "action": "Действие",
@@ -183,11 +370,46 @@
         "turbo_mode": "Режим повышенной мощности"
     },
     "deviceFeatureUnits": {
-        "seconds": "с"
+        "seconds": "с",
+        "%": "%",
+        "A": "А",
+        "V": "В",
+        "W": "Вт",
+        "dB/m": "дБ/м",
+        "hPa": "гПа",
+        "lqi": "LQI",
+        "lx": "лк",
+        "m": "м",
+        "mA": "мА",
+        "mV": "мВ",
+        "min": "мин",
+        "minutes": "мин",
+        "mired": "миред",
+        "s": "с",
+        "°": "°",
+        "°C": "°C"
     },
     "deviceFeatureValues": {
         "action": {
-            "toggle": "Переключение"
+            "toggle": "Переключение",
+            "double": "Двойное нажатие",
+            "double_switch_1": "Двойное нажатие кнопки 1",
+            "double_switch_2": "Двойное нажатие кнопки 2",
+            "hold": "Удержание",
+            "hold_switch_1": "Удержание кнопки 1",
+            "hold_switch_2": "Удержание кнопки 2",
+            "off_down": "Выключение, нижняя кнопка",
+            "off_up": "Выключение, верхняя кнопка",
+            "on_down": "Включение, нижняя кнопка",
+            "on_up": "Включение, верхняя кнопка",
+            "quadruple": "Четыре нажатия",
+            "release": "Отпускание",
+            "single": "Одиночное нажатие",
+            "single_switch_1": "Одиночное нажатие кнопки 1",
+            "single_switch_2": "Одиночное нажатие кнопки 2",
+            "toggle_down": "Переключение, нижняя кнопка",
+            "toggle_up": "Переключение, верхняя кнопка",
+            "triple": "Тройное нажатие"
         },
         "delayed_power_on_state": {
             "false": "Отключено",
@@ -225,7 +447,10 @@
         "state": {
             "OFF": "Выключено",
             "ON": "Включено",
-            "TOGGLE": "Переключить"
+            "TOGGLE": "Переключить",
+            "CLOSE": "Закрыть",
+            "OPEN": "Открыть",
+            "STOP": "Остановить"
         },
         "state_action": {
             "false": "Отключено",
@@ -234,6 +459,325 @@
         "turbo_mode": {
             "false": "Отключено",
             "true": "Включено"
+        },
+        "allow_double_click": {
+            "OFF": "Отключено",
+            "ON": "Включено"
+        },
+        "anti_interference": {
+            "OFF": "Отключено",
+            "ON": "Включено"
+        },
+        "anti_scaling": {
+            "OFF": "Отключено",
+            "ON": "Включено"
+        },
+        "battery_low": {
+            "false": "Заряд в норме",
+            "true": "Низкий заряд"
+        },
+        "button_mode": {
+            "alternative": "Альтернативный",
+            "general": "Обычный"
+        },
+        "buzzer": {
+            "alarm": "Включить тревогу",
+            "mute": "Отключить звук"
+        },
+        "buzzer_manual_alarm": {
+            "false": "Выключено",
+            "true": "Включено"
+        },
+        "buzzer_manual_mute": {
+            "false": "Звук включён",
+            "true": "Без звука"
+        },
+        "calibrate": {
+            "calibrate": "Калибровать",
+            "start": "Начать калибровку"
+        },
+        "calibrated": {
+            "false": "Не откалибровано",
+            "true": "Откалибровано",
+            "error": "Ошибка",
+            "in_progress": "Выполняется",
+            "not_ready": "Не готово",
+            "ready": "Готово"
+        },
+        "charging_status": {
+            "false": "Не заряжается",
+            "true": "Заряжается"
+        },
+        "child_lock": {
+            "LOCK": "Заблокировано",
+            "OFF": "Отключено",
+            "ON": "Включено",
+            "UNLOCK": "Разблокировано"
+        },
+        "clear_schedule": {
+            "trigger": "Очистить"
+        },
+        "color_power_on_behavior": {
+            "customized": "Пользовательский цвет",
+            "initial": "Начальный цвет",
+            "previous": "Предыдущий цвет"
+        },
+        "color_sync": {
+            "false": "Отключено",
+            "true": "Включено"
+        },
+        "contact": {
+            "false": "Открыто",
+            "true": "Закрыто"
+        },
+        "cover_position_tilt_disable_report": {
+            "false": "Отключено",
+            "true": "Включено"
+        },
+        "display_flip": {
+            "OFF": "Обычная ориентация",
+            "ON": "Перевёрнутая ориентация"
+        },
+        "do_not_disturb": {
+            "false": "Отключено",
+            "true": "Включено"
+        },
+        "effect": {
+            "blink": "Мигание",
+            "breathe": "Плавное мигание",
+            "channel_change": "Смена канала",
+            "colorloop": "Цветовой цикл",
+            "finish_effect": "Завершить эффект",
+            "okay": "Подтверждение",
+            "stop_colorloop": "Остановить цветовой цикл",
+            "stop_effect": "Остановить эффект"
+        },
+        "emergency_overcurrent": {
+            "false": "Нет аварии",
+            "true": "Превышение тока"
+        },
+        "emergency_overheat": {
+            "false": "Нет аварии",
+            "true": "Перегрев"
+        },
+        "emergency_overvoltage": {
+            "false": "Нет аварии",
+            "true": "Перенапряжение"
+        },
+        "emergency_shutoff_recovery": {
+            "disabled": "Отключено",
+            "voltage_is_good": "Когда напряжение в норме"
+        },
+        "emergency_undervoltage": {
+            "false": "Нет аварии",
+            "true": "Пониженное напряжение"
+        },
+        "frost_protection": {
+            "OFF": "Отключено",
+            "ON": "Включено"
+        },
+        "heartbeat_indicator": {
+            "false": "Отключено",
+            "true": "Включено"
+        },
+        "heating": {
+            "OFF": "Не нагревает",
+            "ON": "Нагревает"
+        },
+        "identify": {
+            "identify": "Идентифицировать"
+        },
+        "illuminance_raw": {
+            "false": "Скрыто",
+            "true": "Показывать"
+        },
+        "indicator": {
+            "OFF": "Отключено",
+            "ON": "Включено"
+        },
+        "invert_cover": {
+            "false": "Обычное направление",
+            "true": "Инвертированное направление"
+        },
+        "keep_time": {
+            "10": "10 с",
+            "30": "30 с",
+            "60": "60 с",
+            "120": "120 с"
+        },
+        "led_indicator": {
+            "OFF": "Отключено",
+            "ON": "Включено"
+        },
+        "led_indicator_off_enable": {
+            "OFF": "Отключено",
+            "ON": "Включено"
+        },
+        "led_indicator_on_enable": {
+            "OFF": "Отключено",
+            "ON": "Включено"
+        },
+        "linkage_alarm": {
+            "false": "Отключено",
+            "true": "Включено"
+        },
+        "linkage_alarm_state": {
+            "false": "Нет тревоги",
+            "true": "Тревога"
+        },
+        "motor_speed": {
+            "high": "Высокая",
+            "low": "Низкая",
+            "medium": "Средняя"
+        },
+        "motor_state": {
+            "blocked": "Заблокирован",
+            "closing": "Закрывается",
+            "opening": "Открывается",
+            "stopped": "Остановлен"
+        },
+        "occupancy": {
+            "false": "Движения нет",
+            "true": "Обнаружено движение"
+        },
+        "operation_mode": {
+            "control_relay": "Управление реле",
+            "decoupled": "Обе кнопки отвязаны",
+            "down_decoupled": "Нижняя кнопка отвязана",
+            "up_decoupled": "Верхняя кнопка отвязана"
+        },
+        "override_active": {
+            "false": "Неактивно",
+            "true": "Активно"
+        },
+        "power_type": {
+            "full": "Полное",
+            "high": "Высокое",
+            "low": "Низкое",
+            "medium": "Среднее"
+        },
+        "presence": {
+            "false": "Присутствие не обнаружено",
+            "true": "Присутствие обнаружено"
+        },
+        "preset": {
+            "auto": "Авто",
+            "away": "Отсутствие",
+            "comfort": "Комфорт",
+            "eco": "Эко",
+            "frost_protection": "Защита от замерзания",
+            "holiday": "Отпуск",
+            "home": "Дома",
+            "manual": "Ручной",
+            "off": "Выключено",
+            "schedule": "По расписанию",
+            "sleep": "Сон",
+            "vacation": "Отпуск",
+            "wind_down": "Подготовка ко сну"
+        },
+        "relay_mode": {
+            "control_relay": "Управление реле",
+            "decoupled": "Реле отвязано"
+        },
+        "reverse_direction": {
+            "false": "Обычное направление",
+            "true": "Обратное направление"
+        },
+        "running": {
+            "false": "Остановлено",
+            "true": "Движется"
+        },
+        "running_state": {
+            "heat": "Нагрев",
+            "idle": "Ожидание"
+        },
+        "save_schedule": {
+            "trigger": "Сохранить"
+        },
+        "scale_protection": {
+            "OFF": "Отключено",
+            "ON": "Включено"
+        },
+        "schedule": {
+            "false": "Отключено",
+            "true": "Включено"
+        },
+        "schedule_upload_status": {
+            "failed": "Ошибка",
+            "idle": "Ожидание",
+            "in_progress": "Загрузка",
+            "staged": "Подготовлено",
+            "success": "Загружено"
+        },
+        "selftest": {
+            "selftest": "Запустить самопроверку"
+        },
+        "sensitivity": {
+            "high": "Высокая",
+            "low": "Низкая",
+            "medium": "Средняя"
+        },
+        "sensor": {
+            "external": "Внешний",
+            "internal": "Встроенный"
+        },
+        "setup": {
+            "false": "Обычный режим",
+            "true": "Режим настройки"
+        },
+        "smoke": {
+            "false": "Дым не обнаружен",
+            "true": "Обнаружен дым"
+        },
+        "system_mode": {
+            "auto": "Авто",
+            "heat": "Нагрев",
+            "off": "Выключено"
+        },
+        "tamper": {
+            "false": "Нет вмешательства",
+            "true": "Обнаружено вмешательство"
+        },
+        "temperature_control_abnormal_notification": {
+            "OFF": "Отключено",
+            "ON": "Включено"
+        },
+        "test": {
+            "false": "Тест завершён",
+            "true": "Идёт тест"
+        },
+        "thermostat_unit": {
+            "celsius": "Цельсий",
+            "fahrenheit": "Фаренгейт"
+        },
+        "time_start": {
+            "1970": "Отсчёт с 1970 года",
+            "2000": "Отсчёт с 2000 года",
+            "off": "Не отвечать"
+        },
+        "valve_alarm": {
+            "false": "Клапан исправен",
+            "true": "Неисправность клапана"
+        },
+        "valve_detection": {
+            "false": "Отключено",
+            "true": "Включено"
+        },
+        "water_leak": {
+            "false": "Сухо",
+            "true": "Обнаружена протечка"
+        },
+        "window_detection": {
+            "false": "Отключено",
+            "OFF": "Отключено",
+            "ON": "Включено",
+            "true": "Включено"
+        },
+        "window_open": {
+            "CLOSE": "Закрыто",
+            "false": "Закрыто",
+            "OPEN": "Открыто",
+            "true": "Открыто"
         }
     },
     "groups": {
@@ -671,5 +1215,206 @@
         "updating_firmware": "Обновление прошивки",
         "zigbee_manufacturer": "Производитель Zigbee",
         "zigbee_model": "Модель Zigbee"
+    },
+    "deviceFeatureLabels": {
+        "(1) Allow double clicks": "(1) Разрешить двойное нажатие",
+        "(1) Brightness": "(1) Яркость",
+        "(1) Hue": "(1) Оттенок",
+        "(1) Identify": "(1) Идентификация",
+        "(1) LED indication": "(1) LED-индикация",
+        "(1) Power-on behavior": "(1) Поведение после включения питания",
+        "(1) Relay mode": "(1) Режим реле",
+        "(1) Saturation": "(1) Насыщенность",
+        "(2) Allow double clicks": "(2) Разрешить двойное нажатие",
+        "(2) Brightness": "(2) Яркость",
+        "(2) Hue": "(2) Оттенок",
+        "(2) Identify": "(2) Идентификация",
+        "(2) LED indication": "(2) LED-индикация",
+        "(2) Power-on behavior": "(2) Поведение после включения питания",
+        "(2) Relay mode": "(2) Режим реле",
+        "(2) Saturation": "(2) Насыщенность",
+        "Action": "Действие",
+        "Allow double click": "Разрешить двойное нажатие",
+        "Anti freeze temperature": "Температура защиты от замерзания",
+        "Anti interference": "Защита от помех",
+        "Anti scaling": "Защита от закисания клапана",
+        "Away mode": "Режим отсутствия",
+        "Away preset temperature": "Температура режима отсутствия",
+        "Away temperature": "Температура отсутствия",
+        "Ballast maximum level": "Максимальный уровень яркости",
+        "Ballast minimum level": "Минимальный уровень яркости",
+        "Battery": "Заряд батареи",
+        "Battery low": "Низкий заряд батареи",
+        "Brightness": "Яркость",
+        "Button clicks count 1": "Количество нажатий кнопки 1",
+        "Button clicks count 2": "Количество нажатий кнопки 2",
+        "Button clicks count 3": "Количество нажатий кнопки 3",
+        "Button mode": "Режим кнопки",
+        "Buzzer": "Зуммер",
+        "Buzzer manual alarm": "Ручное включение зуммера",
+        "Buzzer manual mute": "Ручное отключение зуммера",
+        "Calibrate": "Калибровка",
+        "Calibrated": "Откалибровано",
+        "Calibration status": "Состояние калибровки",
+        "Charging status": "Состояние зарядки",
+        "Child lock": "Блокировка от детей",
+        "Clear schedule": "Очистить расписание",
+        "Color (X/Y)": "Цвет (X/Y)",
+        "Color power on behavior": "Цвет после включения питания",
+        "Color sync": "Синхронизация цвета",
+        "Color temp": "Цветовая температура",
+        "Comfort temperature": "Комфортная температура",
+        "Contact": "Контакт",
+        "Cover position tilt disable report": "Не публиковать целевое положение шторы",
+        "Current": "Ток",
+        "Current calibration": "Калибровка тока",
+        "Current heating setpoint": "Заданная температура нагрева",
+        "Current precision": "Точность тока",
+        "Delayed power on state": "Отложенное включение",
+        "Delayed power on time": "Задержка включения",
+        "Detach relay mode": "Режим отвязки реле",
+        "Detection distance": "Дальность обнаружения",
+        "Detection interval": "Интервал обнаружения",
+        "Device temperature": "Температура устройства",
+        "Device temperature calibration": "Калибровка температуры устройства",
+        "Display flip": "Поворот дисплея",
+        "Do not disturb": "Не беспокоить",
+        "Eco temperature": "Экономичная температура",
+        "Effect": "Эффект",
+        "Emergency overcurrent": "Авария по превышению тока",
+        "Emergency overheat": "Авария по перегреву",
+        "Emergency overvoltage": "Авария по перенапряжению",
+        "Emergency shutoff recovery": "Восстановление после аварийного отключения",
+        "Emergency undervoltage": "Авария по пониженному напряжению",
+        "Error": "Ошибка",
+        "External temperature input": "Внешняя температура",
+        "External trigger mode": "Режим внешнего выключателя",
+        "Fading time": "Время удержания присутствия",
+        "Friday schedule": "Расписание на пятницу",
+        "Frost protection": "Защита от замерзания",
+        "Frost protection temperature": "Температура защиты от замерзания",
+        "Heartbeat indicator": "Индикатор состояния",
+        "Heating": "Нагрев",
+        "Holiday temperature": "Температура отпуска",
+        "Home temperature": "Домашняя температура",
+        "Hue": "Оттенок",
+        "Humidity": "Влажность",
+        "Humidity calibration": "Калибровка влажности",
+        "Humidity precision": "Точность влажности",
+        "Identify": "Идентификация",
+        "Identify timeout": "Длительность идентификации",
+        "Illuminance": "Освещённость",
+        "Illuminance calibration": "Калибровка освещённости",
+        "Illuminance interval": "Интервал измерения освещённости",
+        "Illuminance raw": "Необработанная освещённость",
+        "Inching control": "Импульсный режим",
+        "Inching control set": "Настройки импульсного режима",
+        "Inching mode": "Действие импульсного режима",
+        "Inching time": "Время импульсного режима",
+        "Indicator": "Индикатор",
+        "Internal sensor temperature": "Температура внутреннего датчика",
+        "Invert cover": "Инвертировать положение шторы",
+        "Keep time": "Время удержания",
+        "LED indication": "LED-индикация",
+        "Led indicator": "LED-индикатор",
+        "Linkage alarm": "Связанная тревога",
+        "Linkage alarm state": "Состояние связанной тревоги",
+        "Linkquality": "Качество связи",
+        "Local temperature": "Текущая температура",
+        "Local temperature calibration": "Калибровка текущей температуры",
+        "Lower voltage threshold": "Нижний порог напряжения",
+        "Manual Override": "Ручное переопределение",
+        "Manual Override Duration": "Длительность ручного переопределения",
+        "Monday schedule": "Расписание на понедельник",
+        "Motion detection sensitivity": "Чувствительность к движению",
+        "Motor speed": "Скорость двигателя",
+        "Motor state": "Состояние двигателя",
+        "Network indicator": "Индикатор сети",
+        "No occupancy since": "Время без движения",
+        "Occupancy": "Движение",
+        "Occupancy timeout": "Тайм-аут движения",
+        "Occupied heating setpoint": "Целевая температура",
+        "Open window detection": "Обнаружение открытого окна",
+        "Operation mode": "Режим работы",
+        "Position": "Положение",
+        "Power": "Мощность",
+        "Power calibration": "Калибровка мощности",
+        "Power outage count": "Количество отключений питания",
+        "Power precision": "Точность мощности",
+        "Power type": "Тип питания",
+        "Power-on behavior": "Поведение после включения питания",
+        "Presence": "Присутствие",
+        "Preset": "Предустановка",
+        "Pressure": "Давление",
+        "Pressure calibration": "Калибровка давления",
+        "Pressure precision": "Точность давления",
+        "Relay mode": "Режим реле",
+        "Relay switches count 1": "Количество переключений реле 1",
+        "Relay switches count 2": "Количество переключений реле 2",
+        "Resets count": "Количество перезапусков",
+        "Reverse direction": "Обратное направление",
+        "Running": "Движение",
+        "Running state": "Состояние нагрева",
+        "Saturation": "Насыщенность",
+        "Saturday schedule": "Расписание на субботу",
+        "Save schedule": "Сохранить расписание",
+        "Scale protection": "Защита от закисания клапана",
+        "Schedule": "Расписание",
+        "Schedule friday": "Расписание на пятницу",
+        "Schedule monday": "Расписание на понедельник",
+        "Schedule saturday": "Расписание на субботу",
+        "Schedule settings": "Настройки расписания",
+        "Schedule sunday": "Расписание на воскресенье",
+        "Schedule thursday": "Расписание на четверг",
+        "Schedule tuesday": "Расписание на вторник",
+        "Schedule upload status": "Состояние загрузки расписания",
+        "Schedule wednesday": "Расписание на среду",
+        "Selftest": "Самопроверка",
+        "Sensitivity": "Чувствительность",
+        "Sensor": "Датчик",
+        "Serial Number": "Серийный номер",
+        "Setup": "Режим настройки",
+        "Sleep temperature": "Температура сна",
+        "Smoke": "Дым",
+        "Smoke density": "Плотность дыма",
+        "Smoke density dbm": "Плотность дыма, дБ/м",
+        "State": "Состояние",
+        "State action": "Публикация состояния как действия",
+        "Static detection sensitivity": "Чувствительность к неподвижному присутствию",
+        "Sunday schedule": "Расписание на воскресенье",
+        "System mode": "Режим термостата",
+        "Tamper": "Вскрытие",
+        "Temperature": "Температура",
+        "Temperature accuracy": "Гистерезис температуры",
+        "Temperature calibration": "Калибровка температуры",
+        "Temperature control abnormal notification": "Оповещение о неисправности регулирования температуры",
+        "Temperature precision": "Точность температуры",
+        "Temperature source": "Источник температуры",
+        "Temperature threshold": "Порог температуры",
+        "Test": "Тест",
+        "Thermostat unit": "Единица температуры термостата",
+        "Thursday schedule": "Расписание на четверг",
+        "Time start": "Начало отсчёта времени",
+        "Transition": "Время перехода",
+        "Trigger count": "Количество срабатываний",
+        "Tuesday schedule": "Расписание на вторник",
+        "Turbo mode": "Режим повышенной мощности",
+        "Upper current threshold": "Верхний порог тока",
+        "Upper voltage threshold": "Верхний порог напряжения",
+        "Uptime": "Время работы",
+        "Vacation temperature": "Температура отпуска",
+        "Valve alarm": "Неисправность клапана",
+        "Valve detection": "Контроль клапана",
+        "Valve position": "Положение клапана",
+        "Voltage": "Напряжение",
+        "Voltage calibration": "Калибровка напряжения",
+        "Voltage precision": "Точность напряжения",
+        "Water leak": "Протечка воды",
+        "Wednesday schedule": "Расписание на среду",
+        "Wind down temperature": "Температура подготовки ко сну",
+        "Window detection": "Обнаружение открытого окна",
+        "Window open": "Открытое окно",
+        "X": "X",
+        "Y": "Y"
     }
 }

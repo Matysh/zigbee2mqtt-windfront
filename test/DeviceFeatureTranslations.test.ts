@@ -26,6 +26,8 @@ beforeAll(async () => {
 describe("device feature translations", () => {
     it("translates labels and exact Zigbee2MQTT descriptions", () => {
         expect(translateDeviceFeatureName(i18n.t, "external_trigger_mode", "External trigger mode")).toBe("Режим внешнего выключателя");
+        expect(translateDeviceFeatureName(i18n.t, "power_on_behavior", "(2) Power-on behavior")).toBe("(2) Поведение после включения питания");
+        expect(translateDeviceFeatureName(i18n.t, "sensor", "Temperature source")).toBe("Источник температуры");
         expect(translateDeviceFeatureDescription(i18n.t, "On/off state of the switch")).toBe("Состояние реле: включено или выключено.");
     });
 

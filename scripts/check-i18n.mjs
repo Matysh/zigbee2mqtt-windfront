@@ -5,7 +5,13 @@ import get from "lodash/get.js";
 
 const LOCALES_PATH = "./src/i18n/locales/";
 const EN_LOCALE_FILE = "en.json";
-const OPTIONAL_NAMESPACES = new Set(["deviceFeatureDescriptions", "deviceFeatureNames", "deviceFeatureUnits", "deviceFeatureValues"]);
+const OPTIONAL_NAMESPACES = new Set([
+    "deviceFeatureDescriptions",
+    "deviceFeatureLabels",
+    "deviceFeatureNames",
+    "deviceFeatureUnits",
+    "deviceFeatureValues",
+]);
 
 const isObject = (value) => value !== null && typeof value === "object";
 

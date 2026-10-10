@@ -10,7 +10,7 @@ export default function DashboardFeatureWrapper({ children, feature, deviceValue
     // @ts-expect-error `undefined` is fine
     const unit = feature.unit as string | undefined;
     const [fi, fiClassName] = getFeatureIcon(feature.name, deviceValue, unit);
-    const { t } = useTranslation(["zigbee", "deviceFeatureNames"]);
+    const { t } = useTranslation(["zigbee", "deviceFeatureLabels", "deviceFeatureNames"]);
     const featureName = feature.name === "state" ? feature.property : feature.name;
     const label = translateDeviceFeatureName(t, featureName, feature.label || startCase(featureName));
 

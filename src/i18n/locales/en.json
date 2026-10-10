@@ -151,20 +151,207 @@
         "state": "State"
     },
     "deviceFeatureDescriptions": {
+        "\"linkage_alarm\" is triggered": "\"linkage_alarm\" is triggered",
+        "(telemetry) Device uptime, in seconds": "(telemetry) Device uptime, in seconds",
+        "(telemetry) Number of resets": "(telemetry) Number of resets",
+        "(telemetry) Total clicks count of button 1": "(telemetry) Total clicks count of button 1",
+        "(telemetry) Total clicks count of button 2": "(telemetry) Total clicks count of button 2",
+        "(telemetry) Total clicks count of button 3": "(telemetry) Total clicks count of button 3",
+        "(telemetry) Total toggle count of relay 1": "(telemetry) Total toggle count of relay 1",
+        "(telemetry) Total toggle count of relay 2": "(telemetry) Total toggle count of relay 2",
+        "Allow detection of double clicks, may introduce delay in reaction when enabled": "Allow detection of double clicks, may introduce delay in reaction when enabled",
+        "Anti interference function": "Anti interference function",
+        "Away preset temperature": "Away preset temperature",
+        "Battery percentage": "Battery percentage",
+        "Brightness acquisition interval (refresh and update only while active)": "Brightness acquisition interval (refresh and update only while active)",
+        "Brightness of LED in OFF state": "Brightness of LED in OFF state",
+        "Brightness of LED in ON state": "Brightness of LED in ON state",
+        "Brightness of this light": "Brightness of this light",
+        "Buzzer alarmed (manually)": "Buzzer alarmed (manually)",
+        "Buzzer muted (manually)": "Buzzer muted (manually)",
+        "Calibrates the current value (percentual offset), takes into effect on next report of device.": "Calibrates the current value (percentual offset), takes into effect on next report of device.",
+        "Calibrates the device_temperature value (absolute offset), takes into effect on next report of device.": "Calibrates the device_temperature value (absolute offset), takes into effect on next report of device.",
+        "Calibrates the humidity value (absolute offset), takes into effect on next report of device.": "Calibrates the humidity value (absolute offset), takes into effect on next report of device.",
+        "Calibrates the illuminance value (percentual offset), takes into effect on next report of device.": "Calibrates the illuminance value (percentual offset), takes into effect on next report of device.",
+        "Calibrates the power value (percentual offset), takes into effect on next report of device.": "Calibrates the power value (percentual offset), takes into effect on next report of device.",
+        "Calibrates the pressure value (absolute offset), takes into effect on next report of device.": "Calibrates the pressure value (absolute offset), takes into effect on next report of device.",
+        "Calibrates the temperature value (absolute offset), takes into effect on next report of device.": "Calibrates the temperature value (absolute offset), takes into effect on next report of device.",
+        "Calibrates the valve": "Calibrates the valve",
+        "Calibrates the voltage value (percentual offset), takes into effect on next report of device.": "Calibrates the voltage value (percentual offset), takes into effect on next report of device.",
+        "Choose whether the thermostat uses its internal sensor or data provided via 'External Sensor Temperature'": "Choose whether the thermostat uses its internal sensor or data provided via 'External Sensor Temperature'",
+        "Clear all weekly schedule inputs and upload an empty schedule to the thermostat": "Clear all weekly schedule inputs and upload an empty schedule to the thermostat",
+        "Color of this light in the CIE 1931 color space (x/y)": "Color of this light in the CIE 1931 color space (x/y)",
+        "Color temperature of this light": "Color temperature of this light",
+        "Comfort temperature": "Comfort temperature",
+        "Condition of automatic recovery after emergency shutoff": "Condition of automatic recovery after emergency shutoff",
+        "Controls state after power outage: false = on, true = restore previous state": "Controls state after power outage: false = on, true = restore previous state",
         "Controls the behavior when the device is powered on after power loss": "Controls the behavior when the device is powered on after power loss",
+        "Controls the motor speed": "Controls the motor speed",
+        "Controls the temperature unit of the thermostat (default celsius).": "Controls the temperature unit of the thermostat (default celsius).",
+        "Controls the transition time (in seconds) of on/off, brightness, color temperature (if applicable) and color (if applicable) changes. Defaults to `0` (no transition).": "Controls the transition time (in seconds) of on/off, brightness, color temperature (if applicable) and color (if applicable) changes. Defaults to `0` (no transition).",
+        "Current state of the custom OTA transfer used to upload the weekly schedule to the thermostat.": "Current state of the custom OTA transfer used to upload the weekly schedule to the thermostat.",
+        "Current temperature measured by the internal or external sensor": "Current temperature measured by the internal or external sensor",
+        "Current temperature measured on the device": "Current temperature measured on the device",
+        "Current temperature used by the thermostat": "Current temperature used by the thermostat",
+        "Decoupled mode": "Decoupled mode",
+        "Decoupled mode for button": "Decoupled mode for button",
         "Delay time for executing a inching action.": "Delay time for executing an inching action.",
         "Delayed Power-on State": "Delayed power-on state",
         "Delayed Power-on time": "Delayed power-on time",
+        "Detection distance": "Detection distance",
+        "Determines if temperature control abnormalities should be detected": "Determines if temperature control abnormalities should be detected",
         "Device Inching function Settings. The device will automatically turn off (turn on) after each turn on (turn off) for a specified period of time.": "Inching function settings. The device will automatically turn off (or on) a specified time after it is turned on (or off).",
+        "Device valve is open or closed (heating or not)": "Device valve is open or closed (heating or not)",
+        "Dimmer button mode": "Dimmer button mode",
+        "Do not publish set cover target position as a normal 'position' value (default false).": "Do not publish set cover target position as a normal 'position' value (default false).",
+        "Duration in minutes for the current manual override. 0 means until next schedule event, 65535 means indefinitely.": "Duration in minutes for the current manual override. 0 means until next schedule event, 65535 means indefinitely.",
+        "Eco temperature": "Eco temperature",
+        "Enable child lock to prevent manual button operation": "Enable child lock to prevent manual button operation",
+        "Enable or disable open window detection. When enabled, the window_open is set to true if an open window is detected": "Enable or disable open window detection. When enabled, the window_open is set to true if an open window is detected",
+        "Enable or disable reporting of abnormal temperature control status. When enabled, the valve alarm is set to true if an abnormality is detected": "Enable or disable reporting of abnormal temperature control status. When enabled, the valve alarm is set to true if an abnormality is detected",
         "Enable/Disable detach relay mode": "Enable or disable detach relay mode",
         "Enable/disable Radio power turbo mode": "Enable or disable radio power turbo mode",
+        "Enable/disable away mode": "Enable/disable away mode",
         "Enable/disable inching function.": "Enable or disable the inching function.",
+        "Enables/disables bi-weekly anti-scaling feature": "Enables/disables bi-weekly anti-scaling feature",
+        "Enables/disables physical input on the device": "Enables/disables physical input on the device",
+        "Enables/disables window detection on the device": "Enables/disables window detection on the device",
+        "Expose the raw illuminance value.": "Expose the raw illuminance value.",
         "External trigger mode, which can be one of edge, pulse, following(off), following(on). The appropriate triggering mode can be selected according to the type of external switch to achieve a better use experience.": "Select the external trigger mode (edge, pulse, following off, or following on) to match the connected switch type.",
+        "Flip the display orientation": "Flip the display orientation",
+        "Holiday temperature": "Holiday temperature",
+        "Home preset temperature": "Home preset temperature",
+        "Hue of LED in OFF state": "Hue of LED in OFF state",
+        "Hue of LED in ON state": "Hue of LED in ON state",
+        "If NTC is damaged, \"Er\" will be on the TRV display.": "If NTC is damaged, \"Er\" will be on the TRV display.",
+        "If the heat sink is not fully opened within two weeks or is not used for a long time, the valve will be blocked due to silting up and the heat sink will not be able to be used. To ensure normal use of the heat sink, the controller will automatically open the valve fully every two weeks. It will run for 30 seconds per time with the screen displaying \"Ad\", then return to its normal working state again.": "If the heat sink is not fully opened within two weeks or is not used for a long time, the valve will be blocked due to silting up and the heat sink will not be able to be used. To ensure normal use of the heat sink, the controller will automatically open the valve fully every two weeks. It will run for 30 seconds per time with the screen displaying \"Ad\", then return to its normal working state again.",
+        "Indicates how many times the sensor was triggered (since last scheduled report)": "Indicates how many times the sensor was triggered (since last scheduled report)",
+        "Indicates if the battery of this device is almost empty": "Indicates if the battery of this device is almost empty",
+        "Indicates if the contact is closed (= true) or open (= false)": "Indicates if the contact is closed (= true) or open (= false)",
+        "Indicates if the device is in setup mode (E11)": "Indicates if the device is in setup mode (E11)",
+        "Indicates if this valve is calibrated, use the calibrate option to calibrate": "Indicates if this valve is calibrated, use the calibrate option to calibrate",
+        "Indicates if window is open": "Indicates if window is open",
+        "Indicates whether open window detection has reported an open window": "Indicates whether open window detection has reported an open window",
+        "Indicates whether temperature control abnormal notification has reported an active alert": "Indicates whether temperature control abnormal notification has reported an active alert",
+        "Indicates whether the battery of the device is almost empty": "Indicates whether the battery of the device is almost empty",
+        "Indicates whether the device detected a water leak": "Indicates whether the device detected a water leak",
+        "Indicates whether the device detected occupancy": "Indicates whether the device detected occupancy",
+        "Indicates whether the device detected presence": "Indicates whether the device detected presence",
+        "Indicates whether the device detected smoke": "Indicates whether the device detected smoke",
+        "Indicates whether the device is opened or closed": "Indicates whether the device is opened or closed",
+        "Indicates whether the device is tampered": "Indicates whether the device is tampered",
+        "Initiate device identification": "Initiate device identification",
+        "Initiate device identification. This device is asleep by default.You may need to wake it up first before sending the identify command.": "Initiate device identification. This device is asleep by default.You may need to wake it up first before sending the identify command.",
+        "Input for remote temperature sensor (when sensor is set to external)": "Input for remote temperature sensor (when sensor is set to external)",
+        "Instantaneous measured electrical current": "Instantaneous measured electrical current",
+        "Instantaneous measured power": "Instantaneous measured power",
+        "Inverts the reported cover position and the state derived from it, false: open=100,close=0, true: open=0,close=100 (default false).": "Inverts the reported cover position and the state derived from it, false: open=100,close=0, true: open=0,close=100 (default false).",
+        "Is LED indicator enabled in OFF state": "Is LED indicator enabled in OFF state",
+        "Is LED indicator enabled in ON state": "Is LED indicator enabled in ON state",
+        "LED indicator mode": "LED indicator mode",
+        "Led indicator": "Led indicator",
+        "Link quality (signal strength)": "Link quality (signal strength)",
+        "Lock or unlock the physical controls on the device": "Lock or unlock the physical controls on the device",
+        "Lower voltage threshold (use with caution)": "Lower voltage threshold (use with caution)",
+        "Manual external temperature forwarded to the W600 when temperature source is external": "Manual external temperature forwarded to the W600 when temperature source is external",
+        "Measured electrical potential value": "Measured electrical potential value",
+        "Measured illuminance": "Measured illuminance",
+        "Measured illuminance. 0 = too low to be measured": "Measured illuminance. 0 = too low to be measured",
+        "Measured relative humidity": "Measured relative humidity",
+        "Measured temperature value": "Measured temperature value",
+        "Minimum temperature limit for frost protection. Turns the thermostat on regardless of setpoint if the temperature drops below this.": "Minimum temperature limit for frost protection. Turns the thermostat on regardless of setpoint if the temperature drops below this.",
+        "Mode of this device": "Mode of this device",
+        "Mode of this device (similar to system_mode)": "Mode of this device (similar to system_mode)",
+        "Motion detection sensitivity": "Motion detection sensitivity",
         "Network indicator Settings, turn off/turn on the online network indicator.": "Turn the network status indicator on or off.",
+        "Notifies of a temperature control abnormality if valve detection is enabled (e.g., thermostat not installed correctly, valve failure or incorrect calibration, incorrect link to external temperature sensor)": "Notifies of a temperature control abnormality if valve detection is enabled (e.g., thermostat not installed correctly, valve failure or incorrect calibration, incorrect link to external temperature sensor)",
+        "Number of digits after decimal point for current, takes into effect on next report of device. This option can only decrease the precision, not increase it.": "Number of digits after decimal point for current, takes into effect on next report of device. This option can only decrease the precision, not increase it.",
+        "Number of digits after decimal point for humidity, takes into effect on next report of device. This option can only decrease the precision, not increase it.": "Number of digits after decimal point for humidity, takes into effect on next report of device. This option can only decrease the precision, not increase it.",
+        "Number of digits after decimal point for power, takes into effect on next report of device. This option can only decrease the precision, not increase it.": "Number of digits after decimal point for power, takes into effect on next report of device. This option can only decrease the precision, not increase it.",
+        "Number of digits after decimal point for pressure, takes into effect on next report of device. This option can only decrease the precision, not increase it.": "Number of digits after decimal point for pressure, takes into effect on next report of device. This option can only decrease the precision, not increase it.",
+        "Number of digits after decimal point for temperature, takes into effect on next report of device. This option can only decrease the precision, not increase it.": "Number of digits after decimal point for temperature, takes into effect on next report of device. This option can only decrease the precision, not increase it.",
+        "Number of digits after decimal point for voltage, takes into effect on next report of device. This option can only decrease the precision, not increase it.": "Number of digits after decimal point for voltage, takes into effect on next report of device. This option can only decrease the precision, not increase it.",
+        "Number of power outages": "Number of power outages",
+        "Number of power outages (since last pairing)": "Number of power outages (since last pairing)",
+        "Offset to add/subtract to the local temperature": "Offset to add/subtract to the local temperature",
         "On/off state of the switch": "On/off state of the switch",
+        "On/off state of this light": "On/off state of this light",
+        "Overcurrent alarm is triggered": "Overcurrent alarm is triggered",
+        "Overheat alarm is triggered": "Overheat alarm is triggered",
+        "Overtemperature threshold (use with caution)": "Overtemperature threshold (use with caution)",
+        "Overvoltage alarm is triggered": "Overvoltage alarm is triggered",
+        "PIR keep time in seconds (refresh and update only while active)": "PIR keep time in seconds (refresh and update only while active)",
+        "PIR sensor sensitivity (refresh and update only while active)": "PIR sensor sensitivity (refresh and update only while active)",
+        "Position of the valve, 100% is fully open": "Position of the valve, 100% is fully open",
+        "Position of this cover": "Position of this cover",
+        "Power on behavior state": "Power on behavior state",
+        "Power supply type": "Power supply type",
+        "Presence keep time": "Presence keep time",
+        "Remaining battery in %": "Remaining battery in %",
+        "Remaining battery in %, can take up to 24 hours before reported": "Remaining battery in %, can take up to 24 hours before reported",
+        "Reply to Tuya-specific time synchronization requests: \"1970\" - Reply with seconds since 1970/01/01 (recommended, should stop the device from asking), \"2000\" - Reply with seconds since 2000/01/01 (use if the weekday is wrong with 1970), \"off\" - Don't reply (use if replying causes too much traffic). Default for this device: \"1970\"": "Reply to Tuya-specific time synchronization requests: \"1970\" - Reply with seconds since 1970/01/01 (recommended, should stop the device from asking), \"2000\" - Reply with seconds since 2000/01/01 (use if the weekday is wrong with 1970), \"off\" - Don't reply (use if replying causes too much traffic). Default for this device: \"1970\"",
+        "Reply to Tuya-specific time synchronization requests: \"1970\" - Reply with seconds since 1970/01/01 (recommended, should stop the device from asking), \"2000\" - Reply with seconds since 2000/01/01 (use if the weekday is wrong with 1970), \"off\" - Don't reply (use if replying causes too much traffic). Default for this device: \"off\"": "Reply to Tuya-specific time synchronization requests: \"1970\" - Reply with seconds since 1970/01/01 (recommended, should stop the device from asking), \"2000\" - Reply with seconds since 2000/01/01 (use if the weekday is wrong with 1970), \"off\" - Don't reply (use if replying causes too much traffic). Default for this device: \"off\"",
+        "Reported battery voltage in millivolts": "Reported battery voltage in millivolts",
+        "Saturation of LED in OFF state": "Saturation of LED in OFF state",
+        "Saturation of LED in ON state": "Saturation of LED in ON state",
+        "Schedule for friday, example: \"HH:MM/C HH:MM/C HH:MM/C HH:MM/C HH:MM/C HH:MM/C\"": "Schedule for friday, example: \"HH:MM/C HH:MM/C HH:MM/C HH:MM/C HH:MM/C HH:MM/C\"",
+        "Schedule for monday, example: \"HH:MM/C HH:MM/C HH:MM/C HH:MM/C HH:MM/C HH:MM/C\"": "Schedule for monday, example: \"HH:MM/C HH:MM/C HH:MM/C HH:MM/C HH:MM/C HH:MM/C\"",
+        "Schedule for saturday, example: \"HH:MM/C HH:MM/C HH:MM/C HH:MM/C HH:MM/C HH:MM/C\"": "Schedule for saturday, example: \"HH:MM/C HH:MM/C HH:MM/C HH:MM/C HH:MM/C HH:MM/C\"",
+        "Schedule for sunday, example: \"HH:MM/C HH:MM/C HH:MM/C HH:MM/C HH:MM/C HH:MM/C\"": "Schedule for sunday, example: \"HH:MM/C HH:MM/C HH:MM/C HH:MM/C HH:MM/C HH:MM/C\"",
+        "Schedule for thursday, example: \"HH:MM/C HH:MM/C HH:MM/C HH:MM/C HH:MM/C HH:MM/C\"": "Schedule for thursday, example: \"HH:MM/C HH:MM/C HH:MM/C HH:MM/C HH:MM/C HH:MM/C\"",
+        "Schedule for tuesday, example: \"HH:MM/C HH:MM/C HH:MM/C HH:MM/C HH:MM/C HH:MM/C\"": "Schedule for tuesday, example: \"HH:MM/C HH:MM/C HH:MM/C HH:MM/C HH:MM/C HH:MM/C\"",
+        "Schedule for wednesday, example: \"HH:MM/C HH:MM/C HH:MM/C HH:MM/C HH:MM/C HH:MM/C\"": "Schedule for wednesday, example: \"HH:MM/C HH:MM/C HH:MM/C HH:MM/C HH:MM/C HH:MM/C\"",
+        "Select temperature sensor to use": "Select temperature sensor to use",
+        "Selected preset scene": "Selected preset scene",
+        "Self-test in progress": "Self-test in progress",
+        "Sends a message the last time occupancy (occupancy: true) was detected. When setting this for example to [10, 60] a `{\"no_occupancy_since\": 10}` will be sent after 10 seconds and a `{\"no_occupancy_since\": 60}` after 60 seconds.": "Sends a message the last time occupancy (occupancy: true) was detected. When setting this for example to [10, 60] a `{\"no_occupancy_since\": 10}` will be sent after 10 seconds and a `{\"no_occupancy_since\": 60}` after 60 seconds.",
         "Set inching off or inching on mode.": "Select whether inching turns the device off or on.",
+        "Sets the duration of the identification procedure in seconds (i.e., how long the device would flash).The value ranges from 1 to 30 seconds (default: 3).": "Sets the duration of the identification procedure in seconds (i.e., how long the device would flash).The value ranges from 1 to 30 seconds (default: 3).",
+        "Sets the duration of the identification procedure in seconds (i.e., how long the device would flash).The value ranges from 1 to 60 seconds (default: 30).": "Sets the duration of the identification procedure in seconds (i.e., how long the device would flash).The value ranges from 1 to 60 seconds (default: 30).",
+        "Sleep preset temperature": "Sleep preset temperature",
+        "Smart schedule configuration (default: mon,tue,wed,thu,fri|8:00,24.0|18:00,17.0|23:00,22.0|8:00,22.0)": "Smart schedule configuration (default: mon,tue,wed,thu,fri|8:00,24.0|18:00,17.0|23:00,22.0|8:00,22.0)",
+        "Specifies the maximum light output of the ballast": "Specifies the maximum light output of the ballast",
+        "Specifies the minimum light output of the ballast": "Specifies the minimum light output of the ballast",
+        "Staged weekly schedule for this day. Use comma-delimited entries in the format HH:MM/preset, for example '08:00/home, 19:00/vacation'. Editing the text fields does not upload anything until Save schedule is triggered.": "Staged weekly schedule for this day. Use comma-delimited entries in the format HH:MM/preset, for example '08:00/home, 19:00/vacation'. Editing the text fields does not upload anything until Save schedule is triggered.",
+        "Start valve calibration": "Start valve calibration",
+        "Starts the self-test process (checking the indicator light and buzzer work properly)": "Starts the self-test process (checking the indicator light and buzzer work properly)",
+        "Startup: when room temperature decreases by 3°C within 5 minutes, stop heating. Close: when room temperature rises by 3 degrees / 48 minutes later / manual (three ways). After the window opening mode is turned on, one of these three conditions can trigger to exit the window opening mode.": "Startup: when room temperature decreases by 3°C within 5 minutes, stop heating. Close: when room temperature rises by 3 degrees / 48 minutes later / manual (three ways). After the window opening mode is turned on, one of these three conditions can trigger to exit the window opening mode.",
         "State actions will also be published as 'action' when true (default false).": "Also publish state changes as actions when enabled (disabled by default).",
-        "Triggered action (e.g. a button click)": "Triggered action (for example, a button click)"
+        "Static detection sensitivity": "Static detection sensitivity",
+        "Switch mode (control_relay - the button control the relay, decoupled - button send events when pressed)": "Switch mode (control_relay - the button control the relay, decoupled - button send events when pressed)",
+        "Tamper-proof status": "Tamper-proof status",
+        "Temperature measured by the thermostat's internal sensor": "Temperature measured by the thermostat's internal sensor",
+        "Temperature of the device": "Temperature of the device",
+        "Temperature setpoint": "Temperature setpoint",
+        "Temporary manual override active": "Temporary manual override active",
+        "The buzzer can be muted and alarmed manually. During a smoke alarm, the buzzer can be manually muted for 80 seconds (\"mute\") and unmuted (\"alarm\"). The buzzer cannot be pre-muted, as this function only works during a smoke alarm. During the absence of a smoke alarm, the buzzer can be manually alarmed (\"alarm\") and disalarmed (\"mute\"), but for this \"linkage_alarm\" option must be enabled": "The buzzer can be muted and alarmed manually. During a smoke alarm, the buzzer can be manually muted for 80 seconds (\"mute\") and unmuted (\"alarm\"). The buzzer cannot be pre-muted, as this function only works during a smoke alarm. During the absence of a smoke alarm, the buzzer can be manually alarmed (\"alarm\") and disalarmed (\"mute\"), but for this \"linkage_alarm\" option must be enabled",
+        "The current charging status.": "The current charging status.",
+        "The current running state": "The current running state",
+        "The current state of the motor.": "The current state of the motor.",
+        "The difference required between local temperature and set point to trigger the valve.": "The difference required between local temperature and set point to trigger the valve.",
+        "The measured atmospheric pressure": "The measured atmospheric pressure",
+        "Time in seconds after which occupancy is cleared after detecting it (default is \"detection_interval\" + 2 seconds). The value must be equal to or greater than \"detection_interval\", and it can also be a fraction.": "Time in seconds after which occupancy is cleared after detecting it (default is \"detection_interval\" + 2 seconds). The value must be equal to or greater than \"detection_interval\", and it can also be a fraction.",
+        "Time interval for detecting actions": "Time interval for detecting actions",
+        "Triggered action (e.g. a button click)": "Triggered action (for example, a button click)",
+        "Triggers an effect on the light (e.g. make light blink for a few seconds)": "Triggers an effect on the light (e.g. make light blink for a few seconds)",
+        "Undervoltage alarm is triggered": "Undervoltage alarm is triggered",
+        "Upload the weekly schedule to the thermostat": "Upload the weekly schedule to the thermostat",
+        "Upper current threshold": "Upper current threshold",
+        "Upper voltage threshold": "Upper voltage threshold",
+        "Vacation preset temperature": "Vacation preset temperature",
+        "Value of smoke concentration": "Value of smoke concentration",
+        "Value of smoke concentration in dB/m": "Value of smoke concentration in dB/m",
+        "Valve calibration state": "Valve calibration state",
+        "Voltage of the battery in millivolts": "Voltage of the battery in millivolts",
+        "When enabled colors will be synced, e.g. if the light supports both color x/y and color temperature a conversion from color x/y to color temperature will be done when setting the x/y color (default true).": "When enabled colors will be synced, e.g. if the light supports both color x/y and color temperature a conversion from color x/y to color temperature will be done when setting the x/y color (default true).",
+        "When enabled, the device will change its state based on your schedule settings": "When enabled, the device will change its state based on your schedule settings",
+        "When the room temperature is lower than 5 °C, the valve opens; when the temperature rises to 8 °C, the valve closes.": "When the room temperature is lower than 5 °C, the valve opens; when the temperature rises to 8 °C, the valve closes.",
+        "When this option is enabled and a smoke alarm has occurred, then \"linkage_alarm_state\"=true, and when the smoke alarm has ended or the buzzer has been manually muted, then \"linkage_alarm_state\"=false": "When this option is enabled and a smoke alarm has occurred, then \"linkage_alarm_state\"=true, and when the smoke alarm has ended or the buzzer has been manually muted, then \"linkage_alarm_state\"=false",
+        "When this option is enabled then in the normal monitoring state, the green indicator light flashes every 60 seconds": "When this option is enabled then in the normal monitoring state, the green indicator light flashes every 60 seconds",
+        "Whether the curtain direction is inverted": "Whether the curtain direction is inverted",
+        "Whether the motor is moving or not": "Whether the motor is moving or not",
+        "Wind-down preset temperature": "Wind-down preset temperature",
+        "Window status CLOSE or OPEN ": "Window status CLOSE or OPEN "
     },
     "deviceFeatureNames": {
         "action": "Action",
@@ -183,11 +370,46 @@
         "turbo_mode": "Turbo mode"
     },
     "deviceFeatureUnits": {
-        "seconds": "seconds"
+        "%": "%",
+        "A": "A",
+        "V": "V",
+        "W": "W",
+        "dB/m": "dB/m",
+        "hPa": "hPa",
+        "lqi": "lqi",
+        "lx": "lx",
+        "m": "m",
+        "mA": "mA",
+        "mV": "mV",
+        "min": "min",
+        "minutes": "minutes",
+        "mired": "mired",
+        "s": "s",
+        "seconds": "seconds",
+        "°": "°",
+        "°C": "°C"
     },
     "deviceFeatureValues": {
         "action": {
-            "toggle": "Toggle"
+            "double": "double",
+            "double_switch_1": "double_switch_1",
+            "double_switch_2": "double_switch_2",
+            "hold": "hold",
+            "hold_switch_1": "hold_switch_1",
+            "hold_switch_2": "hold_switch_2",
+            "off_down": "off_down",
+            "off_up": "off_up",
+            "on_down": "on_down",
+            "on_up": "on_up",
+            "quadruple": "quadruple",
+            "release": "release",
+            "single": "single",
+            "single_switch_1": "single_switch_1",
+            "single_switch_2": "single_switch_2",
+            "toggle": "Toggle",
+            "toggle_down": "toggle_down",
+            "toggle_up": "toggle_up",
+            "triple": "triple"
         },
         "delayed_power_on_state": {
             "false": "Disabled",
@@ -223,8 +445,11 @@
             "toggle": "Toggle"
         },
         "state": {
+            "CLOSE": "CLOSE",
             "OFF": "Off",
             "ON": "On",
+            "OPEN": "OPEN",
+            "STOP": "STOP",
             "TOGGLE": "Toggle"
         },
         "state_action": {
@@ -234,6 +459,325 @@
         "turbo_mode": {
             "false": "Disabled",
             "true": "Enabled"
+        },
+        "allow_double_click": {
+            "OFF": "OFF",
+            "ON": "ON"
+        },
+        "anti_interference": {
+            "OFF": "OFF",
+            "ON": "ON"
+        },
+        "anti_scaling": {
+            "OFF": "OFF",
+            "ON": "ON"
+        },
+        "battery_low": {
+            "false": "false",
+            "true": "true"
+        },
+        "button_mode": {
+            "alternative": "alternative",
+            "general": "general"
+        },
+        "buzzer": {
+            "alarm": "alarm",
+            "mute": "mute"
+        },
+        "buzzer_manual_alarm": {
+            "false": "false",
+            "true": "true"
+        },
+        "buzzer_manual_mute": {
+            "false": "false",
+            "true": "true"
+        },
+        "calibrate": {
+            "calibrate": "calibrate",
+            "start": "start"
+        },
+        "calibrated": {
+            "false": "false",
+            "true": "true",
+            "error": "error",
+            "in_progress": "in_progress",
+            "not_ready": "not_ready",
+            "ready": "ready"
+        },
+        "charging_status": {
+            "false": "false",
+            "true": "true"
+        },
+        "child_lock": {
+            "LOCK": "LOCK",
+            "OFF": "OFF",
+            "ON": "ON",
+            "UNLOCK": "UNLOCK"
+        },
+        "clear_schedule": {
+            "trigger": "trigger"
+        },
+        "color_power_on_behavior": {
+            "customized": "customized",
+            "initial": "initial",
+            "previous": "previous"
+        },
+        "color_sync": {
+            "false": "false",
+            "true": "true"
+        },
+        "contact": {
+            "false": "false",
+            "true": "true"
+        },
+        "cover_position_tilt_disable_report": {
+            "false": "false",
+            "true": "true"
+        },
+        "display_flip": {
+            "OFF": "OFF",
+            "ON": "ON"
+        },
+        "do_not_disturb": {
+            "false": "false",
+            "true": "true"
+        },
+        "effect": {
+            "blink": "blink",
+            "breathe": "breathe",
+            "channel_change": "channel_change",
+            "colorloop": "colorloop",
+            "finish_effect": "finish_effect",
+            "okay": "okay",
+            "stop_colorloop": "stop_colorloop",
+            "stop_effect": "stop_effect"
+        },
+        "emergency_overcurrent": {
+            "false": "false",
+            "true": "true"
+        },
+        "emergency_overheat": {
+            "false": "false",
+            "true": "true"
+        },
+        "emergency_overvoltage": {
+            "false": "false",
+            "true": "true"
+        },
+        "emergency_shutoff_recovery": {
+            "disabled": "disabled",
+            "voltage_is_good": "voltage_is_good"
+        },
+        "emergency_undervoltage": {
+            "false": "false",
+            "true": "true"
+        },
+        "frost_protection": {
+            "OFF": "OFF",
+            "ON": "ON"
+        },
+        "heartbeat_indicator": {
+            "false": "false",
+            "true": "true"
+        },
+        "heating": {
+            "OFF": "OFF",
+            "ON": "ON"
+        },
+        "identify": {
+            "identify": "identify"
+        },
+        "illuminance_raw": {
+            "false": "false",
+            "true": "true"
+        },
+        "indicator": {
+            "OFF": "OFF",
+            "ON": "ON"
+        },
+        "invert_cover": {
+            "false": "false",
+            "true": "true"
+        },
+        "keep_time": {
+            "10": "10",
+            "30": "30",
+            "60": "60",
+            "120": "120"
+        },
+        "led_indicator": {
+            "OFF": "OFF",
+            "ON": "ON"
+        },
+        "led_indicator_off_enable": {
+            "OFF": "OFF",
+            "ON": "ON"
+        },
+        "led_indicator_on_enable": {
+            "OFF": "OFF",
+            "ON": "ON"
+        },
+        "linkage_alarm": {
+            "false": "false",
+            "true": "true"
+        },
+        "linkage_alarm_state": {
+            "false": "false",
+            "true": "true"
+        },
+        "motor_speed": {
+            "high": "high",
+            "low": "low",
+            "medium": "medium"
+        },
+        "motor_state": {
+            "blocked": "blocked",
+            "closing": "closing",
+            "opening": "opening",
+            "stopped": "stopped"
+        },
+        "occupancy": {
+            "false": "false",
+            "true": "true"
+        },
+        "operation_mode": {
+            "control_relay": "control_relay",
+            "decoupled": "decoupled",
+            "down_decoupled": "down_decoupled",
+            "up_decoupled": "up_decoupled"
+        },
+        "override_active": {
+            "false": "false",
+            "true": "true"
+        },
+        "power_type": {
+            "full": "full",
+            "high": "high",
+            "low": "low",
+            "medium": "medium"
+        },
+        "presence": {
+            "false": "false",
+            "true": "true"
+        },
+        "preset": {
+            "auto": "auto",
+            "away": "away",
+            "comfort": "comfort",
+            "eco": "eco",
+            "frost_protection": "frost_protection",
+            "holiday": "holiday",
+            "home": "home",
+            "manual": "manual",
+            "off": "off",
+            "schedule": "schedule",
+            "sleep": "sleep",
+            "vacation": "vacation",
+            "wind_down": "wind_down"
+        },
+        "relay_mode": {
+            "control_relay": "control_relay",
+            "decoupled": "decoupled"
+        },
+        "reverse_direction": {
+            "false": "false",
+            "true": "true"
+        },
+        "running": {
+            "false": "false",
+            "true": "true"
+        },
+        "running_state": {
+            "heat": "heat",
+            "idle": "idle"
+        },
+        "save_schedule": {
+            "trigger": "trigger"
+        },
+        "scale_protection": {
+            "OFF": "OFF",
+            "ON": "ON"
+        },
+        "schedule": {
+            "false": "false",
+            "true": "true"
+        },
+        "schedule_upload_status": {
+            "failed": "failed",
+            "idle": "idle",
+            "in_progress": "in_progress",
+            "staged": "staged",
+            "success": "success"
+        },
+        "selftest": {
+            "selftest": "selftest"
+        },
+        "sensitivity": {
+            "high": "high",
+            "low": "low",
+            "medium": "medium"
+        },
+        "sensor": {
+            "external": "external",
+            "internal": "internal"
+        },
+        "setup": {
+            "false": "false",
+            "true": "true"
+        },
+        "smoke": {
+            "false": "false",
+            "true": "true"
+        },
+        "system_mode": {
+            "auto": "auto",
+            "heat": "heat",
+            "off": "off"
+        },
+        "tamper": {
+            "false": "false",
+            "true": "true"
+        },
+        "temperature_control_abnormal_notification": {
+            "OFF": "OFF",
+            "ON": "ON"
+        },
+        "test": {
+            "false": "false",
+            "true": "true"
+        },
+        "thermostat_unit": {
+            "celsius": "celsius",
+            "fahrenheit": "fahrenheit"
+        },
+        "time_start": {
+            "1970": "1970",
+            "2000": "2000",
+            "off": "off"
+        },
+        "valve_alarm": {
+            "false": "false",
+            "true": "true"
+        },
+        "valve_detection": {
+            "false": "false",
+            "true": "true"
+        },
+        "water_leak": {
+            "false": "false",
+            "true": "true"
+        },
+        "window_detection": {
+            "false": "false",
+            "OFF": "OFF",
+            "ON": "ON",
+            "true": "true"
+        },
+        "window_open": {
+            "CLOSE": "CLOSE",
+            "false": "false",
+            "OPEN": "OPEN",
+            "true": "true"
         }
     },
     "groups": {
@@ -671,5 +1215,206 @@
         "updating_firmware": "Updating firmware",
         "zigbee_manufacturer": "Zigbee Manufacturer",
         "zigbee_model": "Zigbee Model"
+    },
+    "deviceFeatureLabels": {
+        "(1) Allow double clicks": "(1) Allow double clicks",
+        "(1) Brightness": "(1) Brightness",
+        "(1) Hue": "(1) Hue",
+        "(1) Identify": "(1) Identify",
+        "(1) LED indication": "(1) LED indication",
+        "(1) Power-on behavior": "(1) Power-on behavior",
+        "(1) Relay mode": "(1) Relay mode",
+        "(1) Saturation": "(1) Saturation",
+        "(2) Allow double clicks": "(2) Allow double clicks",
+        "(2) Brightness": "(2) Brightness",
+        "(2) Hue": "(2) Hue",
+        "(2) Identify": "(2) Identify",
+        "(2) LED indication": "(2) LED indication",
+        "(2) Power-on behavior": "(2) Power-on behavior",
+        "(2) Relay mode": "(2) Relay mode",
+        "(2) Saturation": "(2) Saturation",
+        "Action": "Action",
+        "Allow double click": "Allow double click",
+        "Anti freeze temperature": "Anti freeze temperature",
+        "Anti interference": "Anti interference",
+        "Anti scaling": "Anti scaling",
+        "Away mode": "Away mode",
+        "Away preset temperature": "Away preset temperature",
+        "Away temperature": "Away temperature",
+        "Ballast maximum level": "Ballast maximum level",
+        "Ballast minimum level": "Ballast minimum level",
+        "Battery": "Battery",
+        "Battery low": "Battery low",
+        "Brightness": "Brightness",
+        "Button clicks count 1": "Button clicks count 1",
+        "Button clicks count 2": "Button clicks count 2",
+        "Button clicks count 3": "Button clicks count 3",
+        "Button mode": "Button mode",
+        "Buzzer": "Buzzer",
+        "Buzzer manual alarm": "Buzzer manual alarm",
+        "Buzzer manual mute": "Buzzer manual mute",
+        "Calibrate": "Calibrate",
+        "Calibrated": "Calibrated",
+        "Calibration status": "Calibration status",
+        "Charging status": "Charging status",
+        "Child lock": "Child lock",
+        "Clear schedule": "Clear schedule",
+        "Color (X/Y)": "Color (X/Y)",
+        "Color power on behavior": "Color power on behavior",
+        "Color sync": "Color sync",
+        "Color temp": "Color temp",
+        "Comfort temperature": "Comfort temperature",
+        "Contact": "Contact",
+        "Cover position tilt disable report": "Cover position tilt disable report",
+        "Current": "Current",
+        "Current calibration": "Current calibration",
+        "Current heating setpoint": "Current heating setpoint",
+        "Current precision": "Current precision",
+        "Delayed power on state": "Delayed power on state",
+        "Delayed power on time": "Delayed power on time",
+        "Detach relay mode": "Detach relay mode",
+        "Detection distance": "Detection distance",
+        "Detection interval": "Detection interval",
+        "Device temperature": "Device temperature",
+        "Device temperature calibration": "Device temperature calibration",
+        "Display flip": "Display flip",
+        "Do not disturb": "Do not disturb",
+        "Eco temperature": "Eco temperature",
+        "Effect": "Effect",
+        "Emergency overcurrent": "Emergency overcurrent",
+        "Emergency overheat": "Emergency overheat",
+        "Emergency overvoltage": "Emergency overvoltage",
+        "Emergency shutoff recovery": "Emergency shutoff recovery",
+        "Emergency undervoltage": "Emergency undervoltage",
+        "Error": "Error",
+        "External temperature input": "External temperature input",
+        "External trigger mode": "External trigger mode",
+        "Fading time": "Fading time",
+        "Friday schedule": "Friday schedule",
+        "Frost protection": "Frost protection",
+        "Frost protection temperature": "Frost protection temperature",
+        "Heartbeat indicator": "Heartbeat indicator",
+        "Heating": "Heating",
+        "Holiday temperature": "Holiday temperature",
+        "Home temperature": "Home temperature",
+        "Hue": "Hue",
+        "Humidity": "Humidity",
+        "Humidity calibration": "Humidity calibration",
+        "Humidity precision": "Humidity precision",
+        "Identify": "Identify",
+        "Identify timeout": "Identify timeout",
+        "Illuminance": "Illuminance",
+        "Illuminance calibration": "Illuminance calibration",
+        "Illuminance interval": "Illuminance interval",
+        "Illuminance raw": "Illuminance raw",
+        "Inching control": "Inching control",
+        "Inching control set": "Inching control set",
+        "Inching mode": "Inching mode",
+        "Inching time": "Inching time",
+        "Indicator": "Indicator",
+        "Internal sensor temperature": "Internal sensor temperature",
+        "Invert cover": "Invert cover",
+        "Keep time": "Keep time",
+        "LED indication": "LED indication",
+        "Led indicator": "Led indicator",
+        "Linkage alarm": "Linkage alarm",
+        "Linkage alarm state": "Linkage alarm state",
+        "Linkquality": "Linkquality",
+        "Local temperature": "Local temperature",
+        "Local temperature calibration": "Local temperature calibration",
+        "Lower voltage threshold": "Lower voltage threshold",
+        "Manual Override": "Manual Override",
+        "Manual Override Duration": "Manual Override Duration",
+        "Monday schedule": "Monday schedule",
+        "Motion detection sensitivity": "Motion detection sensitivity",
+        "Motor speed": "Motor speed",
+        "Motor state": "Motor state",
+        "Network indicator": "Network indicator",
+        "No occupancy since": "No occupancy since",
+        "Occupancy": "Occupancy",
+        "Occupancy timeout": "Occupancy timeout",
+        "Occupied heating setpoint": "Occupied heating setpoint",
+        "Open window detection": "Open window detection",
+        "Operation mode": "Operation mode",
+        "Position": "Position",
+        "Power": "Power",
+        "Power calibration": "Power calibration",
+        "Power outage count": "Power outage count",
+        "Power precision": "Power precision",
+        "Power type": "Power type",
+        "Power-on behavior": "Power-on behavior",
+        "Presence": "Presence",
+        "Preset": "Preset",
+        "Pressure": "Pressure",
+        "Pressure calibration": "Pressure calibration",
+        "Pressure precision": "Pressure precision",
+        "Relay mode": "Relay mode",
+        "Relay switches count 1": "Relay switches count 1",
+        "Relay switches count 2": "Relay switches count 2",
+        "Resets count": "Resets count",
+        "Reverse direction": "Reverse direction",
+        "Running": "Running",
+        "Running state": "Running state",
+        "Saturation": "Saturation",
+        "Saturday schedule": "Saturday schedule",
+        "Save schedule": "Save schedule",
+        "Scale protection": "Scale protection",
+        "Schedule": "Schedule",
+        "Schedule friday": "Schedule friday",
+        "Schedule monday": "Schedule monday",
+        "Schedule saturday": "Schedule saturday",
+        "Schedule settings": "Schedule settings",
+        "Schedule sunday": "Schedule sunday",
+        "Schedule thursday": "Schedule thursday",
+        "Schedule tuesday": "Schedule tuesday",
+        "Schedule upload status": "Schedule upload status",
+        "Schedule wednesday": "Schedule wednesday",
+        "Selftest": "Selftest",
+        "Sensitivity": "Sensitivity",
+        "Sensor": "Sensor",
+        "Serial Number": "Serial Number",
+        "Setup": "Setup",
+        "Sleep temperature": "Sleep temperature",
+        "Smoke": "Smoke",
+        "Smoke density": "Smoke density",
+        "Smoke density dbm": "Smoke density dbm",
+        "State": "State",
+        "State action": "State action",
+        "Static detection sensitivity": "Static detection sensitivity",
+        "Sunday schedule": "Sunday schedule",
+        "System mode": "System mode",
+        "Tamper": "Tamper",
+        "Temperature": "Temperature",
+        "Temperature accuracy": "Temperature accuracy",
+        "Temperature calibration": "Temperature calibration",
+        "Temperature control abnormal notification": "Temperature control abnormal notification",
+        "Temperature precision": "Temperature precision",
+        "Temperature source": "Temperature source",
+        "Temperature threshold": "Temperature threshold",
+        "Test": "Test",
+        "Thermostat unit": "Thermostat unit",
+        "Thursday schedule": "Thursday schedule",
+        "Time start": "Time start",
+        "Transition": "Transition",
+        "Trigger count": "Trigger count",
+        "Tuesday schedule": "Tuesday schedule",
+        "Turbo mode": "Turbo mode",
+        "Upper current threshold": "Upper current threshold",
+        "Upper voltage threshold": "Upper voltage threshold",
+        "Uptime": "Uptime",
+        "Vacation temperature": "Vacation temperature",
+        "Valve alarm": "Valve alarm",
+        "Valve detection": "Valve detection",
+        "Valve position": "Valve position",
+        "Voltage": "Voltage",
+        "Voltage calibration": "Voltage calibration",
+        "Voltage precision": "Voltage precision",
+        "Water leak": "Water leak",
+        "Wednesday schedule": "Wednesday schedule",
+        "Wind down temperature": "Wind down temperature",
+        "Window detection": "Window detection",
+        "Window open": "Window open",
+        "X": "X",
+        "Y": "Y"
     }
 }
