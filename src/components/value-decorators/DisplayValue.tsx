@@ -1,5 +1,6 @@
 import { memo } from "react";
 import { useTranslation } from "react-i18next";
+import { translateDeviceFeatureValue } from "../../i18n/deviceFeatureTranslations.js";
 
 type DisplayValueProps = {
     name: string;
@@ -8,7 +9,12 @@ type DisplayValueProps = {
 
 const BooleanValueView = memo((props: DisplayValueProps) => {
     const { value, name } = props;
-    const { t } = useTranslation("values");
+    const { t, i18n } = useTranslation(["values", "deviceFeatureValues"]);
+    const translatedValue = translateDeviceFeatureValue(i18n, t, name, Boolean(value));
+
+    if (translatedValue !== undefined) {
+        return translatedValue;
+    }
 
     switch (name) {
         case "contact": {
@@ -45,8 +51,8 @@ const BooleanValueView = memo((props: DisplayValueProps) => {
 });
 
 const DisplayValue = memo((props: DisplayValueProps) => {
-    const { t } = useTranslation("values");
-    const { value } = props;
+    const { t, i18n } = useTranslation(["values", "deviceFeatureValues"]);
+    const { name, value } = props;
 
     switch (typeof value) {
         case "boolean":
@@ -55,8 +61,15 @@ const DisplayValue = memo((props: DisplayValueProps) => {
             return "N/A";
         case "object":
             return value === null ? t(($) => $.null) : JSON.stringify(value);
-        case "string":
-            return value === "" ? <span className="text-xs opacity-50">{t(($) => $.empty_string)}</span> : value;
+        case "string": {
+            if (value === "") {
+                return <span className="text-xs opacity-50">{t(($) => $.empty_string, { ns: "values" })}</span>;
+            }
+
+            return translateDeviceFeatureValue(i18n, t, name, value) ?? value;
+        }
+        case "number":
+            return translateDeviceFeatureValue(i18n, t, name, value) ?? JSON.stringify(value);
         default:
             return JSON.stringify(value);
     }

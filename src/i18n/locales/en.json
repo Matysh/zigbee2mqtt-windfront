@@ -150,6 +150,92 @@
         "settings_specific": "Settings (specific)",
         "state": "State"
     },
+    "deviceFeatureDescriptions": {
+        "Controls the behavior when the device is powered on after power loss": "Controls the behavior when the device is powered on after power loss",
+        "Delay time for executing a inching action.": "Delay time for executing an inching action.",
+        "Delayed Power-on State": "Delayed power-on state",
+        "Delayed Power-on time": "Delayed power-on time",
+        "Device Inching function Settings. The device will automatically turn off (turn on) after each turn on (turn off) for a specified period of time.": "Inching function settings. The device will automatically turn off (or on) a specified time after it is turned on (or off).",
+        "Enable/Disable detach relay mode": "Enable or disable detach relay mode",
+        "Enable/disable Radio power turbo mode": "Enable or disable radio power turbo mode",
+        "Enable/disable inching function.": "Enable or disable the inching function.",
+        "External trigger mode, which can be one of edge, pulse, following(off), following(on). The appropriate triggering mode can be selected according to the type of external switch to achieve a better use experience.": "Select the external trigger mode (edge, pulse, following off, or following on) to match the connected switch type.",
+        "Network indicator Settings, turn off/turn on the online network indicator.": "Turn the network status indicator on or off.",
+        "On/off state of the switch": "On/off state of the switch",
+        "Set inching off or inching on mode.": "Select whether inching turns the device off or on.",
+        "State actions will also be published as 'action' when true (default false).": "Also publish state changes as actions when enabled (disabled by default).",
+        "Triggered action (e.g. a button click)": "Triggered action (for example, a button click)"
+    },
+    "deviceFeatureNames": {
+        "action": "Action",
+        "delayed_power_on_state": "Delayed power-on state",
+        "delayed_power_on_time": "Delayed power-on time",
+        "detach_relay_mode": "Detach relay mode",
+        "external_trigger_mode": "External trigger mode",
+        "inching_control": "Inching control",
+        "inching_control_set": "Inching control settings",
+        "inching_mode": "Inching mode",
+        "inching_time": "Inching time",
+        "network_indicator": "Network indicator",
+        "power_on_behavior": "Power-on behavior",
+        "state": "State",
+        "state_action": "State action",
+        "turbo_mode": "Turbo mode"
+    },
+    "deviceFeatureUnits": {
+        "seconds": "seconds"
+    },
+    "deviceFeatureValues": {
+        "action": {
+            "toggle": "Toggle"
+        },
+        "delayed_power_on_state": {
+            "false": "Disabled",
+            "true": "Enabled"
+        },
+        "detach_relay_mode": {
+            "false": "Disabled",
+            "true": "Enabled"
+        },
+        "external_trigger_mode": {
+            "edge": "Edge switch",
+            "following(off)": "Following (inverted)",
+            "following(on)": "Following",
+            "pulse": "Momentary switch"
+        },
+        "inching_control": {
+            "DISABLE": "Disable",
+            "ENABLE": "Enable"
+        },
+        "inching_mode": {
+            "OFF": "Turn off",
+            "ON": "Turn on",
+            "TOGGLE": "Toggle"
+        },
+        "network_indicator": {
+            "false": "Disabled",
+            "true": "Enabled"
+        },
+        "power_on_behavior": {
+            "off": "Off",
+            "on": "On",
+            "previous": "Restore previous state",
+            "toggle": "Toggle"
+        },
+        "state": {
+            "OFF": "Off",
+            "ON": "On",
+            "TOGGLE": "Toggle"
+        },
+        "state_action": {
+            "false": "Disabled",
+            "true": "Enabled"
+        },
+        "turbo_mode": {
+            "false": "Disabled",
+            "true": "Enabled"
+        }
+    },
     "groups": {
         "add_to_group": "Add to group",
         "add_to_group_header": "Add a device to the group",

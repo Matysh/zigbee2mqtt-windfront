@@ -12,6 +12,7 @@ export type ValueWithLabel = {
 export type ValueWithLabelOrPrimitive = ValueWithLabel | number | string;
 
 type EnumProps = {
+    name?: string;
     value?: ValueWithLabelOrPrimitive;
     onChange(value: unknown): Promise<void>;
     values: ValueWithLabelOrPrimitive[];
@@ -23,7 +24,7 @@ function isPrimitive(step?: ValueWithLabelOrPrimitive | null): step is number | 
 }
 
 const EnumEditor = memo((props: EnumProps) => {
-    const { onChange, values, value, minimal } = props;
+    const { name = "", onChange, values, value, minimal } = props;
     const { t } = useTranslation("common");
     const primitiveValue = isPrimitive(value);
 
@@ -46,7 +47,7 @@ const EnumEditor = memo((props: EnumProps) => {
 
                 return (
                     <option key={primitive ? v : v.name} value={primitive ? v : v.value}>
-                        {primitive ? v : v.name}
+                        {primitive ? <DisplayValue value={v} name={name} /> : v.name}
                     </option>
                 );
             })}
@@ -65,7 +66,7 @@ const EnumEditor = memo((props: EnumProps) => {
                         item={primitive ? v : v.value}
                         title={primitive ? `${v}` : v.description}
                     >
-                        {primitive ? <DisplayValue value={v} name="" /> : v.name}
+                        {primitive ? <DisplayValue value={v} name={name} /> : v.name}
                     </Button>
                 );
             })}

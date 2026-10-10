@@ -19,6 +19,7 @@ const Enum = memo((props: EnumProps) => {
     if (access & FeatureAccessMode.SET) {
         return (
             <EnumEditor
+                name={props.feature.name}
                 onChange={(value) => onChange(property ? { [property]: value } : value)}
                 values={values}
                 value={

@@ -2,6 +2,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import startCase from "lodash/startCase.js";
 import type { PropsWithChildren } from "react";
 import { useTranslation } from "react-i18next";
+import { translateDeviceFeatureName } from "../../i18n/deviceFeatureTranslations.js";
 import type { FeatureWrapperProps } from "../features/FeatureWrapper.js";
 import { getFeatureIcon } from "../features/index.js";
 
@@ -9,14 +10,15 @@ export default function DashboardFeatureWrapper({ children, feature, deviceValue
     // @ts-expect-error `undefined` is fine
     const unit = feature.unit as string | undefined;
     const [fi, fiClassName] = getFeatureIcon(feature.name, deviceValue, unit);
-    const { t } = useTranslation("zigbee");
+    const { t } = useTranslation(["zigbee", "deviceFeatureNames"]);
     const featureName = feature.name === "state" ? feature.property : feature.name;
+    const label = translateDeviceFeatureName(t, featureName, feature.label || startCase(featureName));
 
     return (
         <div className="flex flex-row items-center gap-1 mb-2">
             <FontAwesomeIcon icon={fi} className={fiClassName} />
             <div className="grow-1" title={featureName}>
-                {startCase(featureName)}
+                {label}
                 {!endpointSpecific && <span title={t(($) => $.endpoint)}>{feature.endpoint ? ` (${feature.endpoint})` : null}</span>}
             </div>
             <div className="shrink-1 *:bg-base-200">{children}</div>

@@ -150,6 +150,92 @@
         "settings_specific": "Настройки (специфичные)",
         "state": "Состояние"
     },
+    "deviceFeatureDescriptions": {
+        "Controls the behavior when the device is powered on after power loss": "Определяет состояние устройства после восстановления питания.",
+        "Delay time for executing a inching action.": "Задержка перед выполнением действия импульсного режима.",
+        "Delayed Power-on State": "Включает или отключает задержку включения после подачи питания.",
+        "Delayed Power-on time": "Время задержки включения после подачи питания.",
+        "Device Inching function Settings. The device will automatically turn off (turn on) after each turn on (turn off) for a specified period of time.": "Настройки импульсного режима. Устройство автоматически выключится или включится через заданное время после каждого включения или выключения.",
+        "Enable/Disable detach relay mode": "Разделяет управление внешним выключателем и реле.",
+        "Enable/disable Radio power turbo mode": "Включает или отключает режим повышенной мощности радиопередатчика.",
+        "Enable/disable inching function.": "Включает или отключает импульсный режим.",
+        "External trigger mode, which can be one of edge, pulse, following(off), following(on). The appropriate triggering mode can be selected according to the type of external switch to achieve a better use experience.": "Выберите режим внешнего входа в соответствии с типом подключённого выключателя: переключатель, кнопка или следование положению.",
+        "Network indicator Settings, turn off/turn on the online network indicator.": "Включает или отключает индикатор состояния сети.",
+        "On/off state of the switch": "Состояние реле: включено или выключено.",
+        "Set inching off or inching on mode.": "Определяет, будет ли импульсный режим включать или выключать устройство.",
+        "State actions will also be published as 'action' when true (default false).": "Если включено, изменения состояния также публикуются в поле action. По умолчанию отключено.",
+        "Triggered action (e.g. a button click)": "Выполненное действие, например нажатие кнопки."
+    },
+    "deviceFeatureNames": {
+        "action": "Действие",
+        "delayed_power_on_state": "Отложенное включение",
+        "delayed_power_on_time": "Задержка включения",
+        "detach_relay_mode": "Режим отвязки реле",
+        "external_trigger_mode": "Режим внешнего выключателя",
+        "inching_control": "Импульсный режим",
+        "inching_control_set": "Настройки импульсного режима",
+        "inching_mode": "Действие импульсного режима",
+        "inching_time": "Время импульсного режима",
+        "network_indicator": "Индикатор сети",
+        "power_on_behavior": "Поведение после включения питания",
+        "state": "Состояние",
+        "state_action": "Публикация состояния как действия",
+        "turbo_mode": "Режим повышенной мощности"
+    },
+    "deviceFeatureUnits": {
+        "seconds": "с"
+    },
+    "deviceFeatureValues": {
+        "action": {
+            "toggle": "Переключение"
+        },
+        "delayed_power_on_state": {
+            "false": "Отключено",
+            "true": "Включено"
+        },
+        "detach_relay_mode": {
+            "false": "Отключено",
+            "true": "Включено"
+        },
+        "external_trigger_mode": {
+            "edge": "Переключатель",
+            "following(off)": "Следование положению (инвертировано)",
+            "following(on)": "Следование положению",
+            "pulse": "Импульсная кнопка"
+        },
+        "inching_control": {
+            "DISABLE": "Отключить",
+            "ENABLE": "Включить"
+        },
+        "inching_mode": {
+            "OFF": "Выключить",
+            "ON": "Включить",
+            "TOGGLE": "Переключить"
+        },
+        "network_indicator": {
+            "false": "Отключено",
+            "true": "Включено"
+        },
+        "power_on_behavior": {
+            "off": "Всегда выключено",
+            "on": "Всегда включено",
+            "previous": "Восстановить предыдущее состояние",
+            "toggle": "Переключить состояние"
+        },
+        "state": {
+            "OFF": "Выключено",
+            "ON": "Включено",
+            "TOGGLE": "Переключить"
+        },
+        "state_action": {
+            "false": "Отключено",
+            "true": "Включено"
+        },
+        "turbo_mode": {
+            "false": "Отключено",
+            "true": "Включено"
+        }
+    },
     "groups": {
         "add_to_group": "Добавить в группу",
         "add_to_group_header": "Добавить устройство в группу",

@@ -5,6 +5,7 @@ import get from "lodash/get.js";
 
 const LOCALES_PATH = "./src/i18n/locales/";
 const EN_LOCALE_FILE = "en.json";
+const OPTIONAL_NAMESPACES = new Set(["deviceFeatureDescriptions", "deviceFeatureNames", "deviceFeatureUnits", "deviceFeatureValues"]);
 
 const isObject = (value) => value !== null && typeof value === "object";
 
@@ -30,6 +31,7 @@ const getKeys = (content, path) => {
 };
 
 const enKeys = getKeys(enTranslations);
+const requiredEnKeys = enKeys.filter((key) => !OPTIONAL_NAMESPACES.has(key.split(".", 1)[0]));
 
 let error = false;
 
@@ -42,7 +44,7 @@ for (const localFile of readdirSync(LOCALES_PATH)) {
     const keys = getKeys(translations);
 
     if (keys.length !== 0) {
-        const missing = difference(enKeys, keys);
+        const missing = difference(requiredEnKeys, keys);
 
         if (missing.length !== 0) {
             console.error(`[${localFile}]: Missing keys:`);

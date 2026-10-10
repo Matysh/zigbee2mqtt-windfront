@@ -6,12 +6,12 @@ import type { Device, FeatureWithAnySubFeatures } from "../src/types.js";
 
 vi.mock("react-i18next", () => ({
     useTranslation: () => ({
-        t: (key: (arg: Record<string, string>) => string) => {
+        t: (key: string | ((arg: Record<string, string>) => string), options?: { defaultValue?: string }) => {
             const translations: Record<string, string> = {
                 apply: "Apply",
             };
 
-            return key(translations);
+            return typeof key === "function" ? key(translations) : (options?.defaultValue ?? key);
         },
     }),
 }));

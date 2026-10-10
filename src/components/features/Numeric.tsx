@@ -22,6 +22,7 @@ const Numeric = memo((props: NumericProps) => {
     if (access & FeatureAccessMode.SET) {
         return (
             <RangeEditor
+                name={props.feature.name}
                 onChange={async (value) => {
                     await onChange(property ? { [property]: value } : value);
                 }}

@@ -10,9 +10,12 @@ import {
     useEffect,
     useState,
 } from "react";
+import { useTranslation } from "react-i18next";
+import { translateDeviceFeatureUnit } from "../../i18n/deviceFeatureTranslations.js";
 import EnumEditor, { type ValueWithLabelOrPrimitive } from "./EnumEditor.js";
 
 type RangeProps = Omit<InputHTMLAttributes<HTMLInputElement>, "onChange" | "value"> & {
+    name?: string;
     value: number | "";
     unit?: string;
     onChange(value: number | null): Promise<void>;
@@ -21,7 +24,9 @@ type RangeProps = Omit<InputHTMLAttributes<HTMLInputElement>, "onChange" | "valu
 };
 
 const RangeEditor = memo((props: RangeProps) => {
-    const { onChange, value, min, max, unit, steps, minimal, ...rest } = props;
+    const { name = "", onChange, value, min, max, unit, steps, minimal, ...rest } = props;
+    const { t } = useTranslation("deviceFeatureUnits");
+    const translatedUnit = translateDeviceFeatureUnit(t, unit);
     const [currentValue, setCurrentValue] = useState<number | "">(value);
     const showRange = min != null && max != null;
 
@@ -45,7 +50,7 @@ const RangeEditor = memo((props: RangeProps) => {
 
     return (
         <div className="flex flex-row flex-wrap gap-3 items-center">
-            {!minimal && steps ? <EnumEditor values={steps} onChange={onChange} value={currentValue} /> : null}
+            {!minimal && steps ? <EnumEditor name={name} values={steps} onChange={onChange} value={currentValue} /> : null}
             {showRange ? (
                 <div className="w-full max-w-xs">
                     <input
@@ -79,7 +84,7 @@ const RangeEditor = memo((props: RangeProps) => {
                         max={max}
                         {...rest}
                     />
-                    {unit}
+                    {translatedUnit}
                 </label>
             )}
         </div>
